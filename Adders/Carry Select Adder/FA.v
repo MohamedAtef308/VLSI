@@ -1,11 +1,11 @@
 module FA (
- input [3:0] a,
- input [3:0] b,
- input cin,
- output [3:0] sum,
- output cout
+    input  a,
+    input  b,
+    input Cin,
+    output  Sum,
+    output Cout
 );
 
-assign {cout, sum} = a + b + cin;
-
+    assign Sum = a ^ b ^ Cin;  // Sum output
+    assign Cout = (a & b) | (b & Cin) | (a & Cin); // Carry-out
 endmodule
