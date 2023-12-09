@@ -3,7 +3,8 @@ module CSA(
     input [31:0] b,
     input cin,
     output [31:0] sum,
-    output cout
+    output cout,
+    output overflow
     );
 
     wire [3:0] CoutSelector;
@@ -31,7 +32,10 @@ module CSA(
     ElevenBitAdder Adder11_Carry0(a[31:21],b[31:21],1'b0,Sum11_Carry0,Cout_Carry0[2]);
     ElevenBitAdder Adder11_Carry1(a[31:21],b[31:21],1'b1,Sum11_Carry1,Cout_Carry1[2]);
     assign sum[31:21] = (CoutSelector[2]==0)? Sum11_Carry0 : Sum11_Carry1;
+    
     MUX_2 CarryOutMux11(Cout_Carry0[2], Cout_Carry1[2], CoutSelector[2], CoutSelector[3]);
     assign cout = CoutSelector[3];
+    assign overflow =(~(a[31] ^ b[31]) & (a[31] ^ sum[31]));
+
 
 endmodule
