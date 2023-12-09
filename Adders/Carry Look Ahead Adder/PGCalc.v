@@ -1,18 +1,22 @@
 module PGCalc(
-    input [31:0] a,
-    input [31:0] b,
+    input [3:0] a,
+    input [3:0] b,
     input cin,
-    output [31:0] cout
+    output cout,
+    output [3:0] sum
 );
 
-    wire [31:0] g;
-    wire [31:0] p;
+    wire [3:0] g;
+    wire [3:0] p;
+    wire [3:0] c;
     assign g = a & b;
     assign p = a ^ b;
-    genvar i;
-    generate
-        for (i = 0; i < 32; i = i + 1) begin : carry_chain
-            assign cout[i] = (g[i] | (p[i] & (i == 0 ? cin : cout[i-1])));
-        end
-    endgenerate
+
+    assign c[0] = cin;
+    assign c[1] = (g[0] | (p[0] & cin));
+    assign c[2] = (g[1] | (p[1] & (g[0] | (p[0] & cin))));
+    assign c[3] = (g[2] | (p[2] & (g[1] | (p[1] & (g[0] | (p[0] & cin))))));
+    assign cout = (g[3] | (p[3] & (g[2] | (p[2] & (g[1] | (p[1] & (g[0] | (p[0] & cin))))))));
+    assign sum = a ^ b ^ c;
+    // a ^ b may be replace by p
 endmodule
