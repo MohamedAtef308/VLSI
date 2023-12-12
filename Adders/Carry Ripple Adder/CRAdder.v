@@ -3,7 +3,8 @@ module CRAdder (
     input [31:0] b,
     input cin,
     output [31:0] sum,
-    output cout
+    output cout,
+    output overflow
 );
     
     wire [31:0] passCout;
@@ -55,5 +56,6 @@ module CRAdder (
     FullAdder bit30(a[30], b[30], passCout[29], sum[30], passCout[30]);
     FullAdder bit31(a[31], b[31], passCout[30], sum[31], cout);
 
+    assign overflow = ((~(a[31] ^ b[31])) & (sum[31] ^ a[31]));
 
 endmodule
