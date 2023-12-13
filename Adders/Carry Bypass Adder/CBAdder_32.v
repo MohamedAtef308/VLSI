@@ -3,7 +3,8 @@ module CBAdder_32(
     input [31:0] b,
     input cin,
     output [31:0] sum,
-    output cout
+    output cout,
+    output overflow
 );
 
     wire [6:0] carries;
