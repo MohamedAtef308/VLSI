@@ -1,7 +1,7 @@
 module SAM (
   input [31:0] a,
   input [31:0] b,
-  output wire [63:0] sum,
+  output wire [63:0] result,
   output wire sign
 );
 
@@ -13,11 +13,10 @@ module SAM (
       if (b[i]) begin
         temp = temp + (a[30:0] << i);
       end
-      $display("temp = %b", temp);
     end
   end
 
-  assign sum = temp;
+  assign result = temp;
   assign sign = (a[31] ^ b[31]) && (temp != 64'b0);
   
 endmodule
