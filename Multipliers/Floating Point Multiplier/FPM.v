@@ -23,14 +23,14 @@ module FPMult (
 
         tempResult = mantissaA * mantissaB;
 
-        if (shiftAmount) begin
-            tempResult = tempResult >> shiftAmount;
-            tempExp = tempExp + shiftAmount;
-        end
+        // if (shiftAmount) begin
+        //     tempResult = tempResult >> shiftAmount;
+        //     tempExp = tempExp + shiftAmount;
+        // end
 
     end
     
     assign result [31] = a[31] ^ b[31];
-    assign result [30:23]  = tempExp;
+    assign result [30:23]  = tempExp[7:0];
     assign result [22:0] = tempResult[46:23];
 endmodule 
