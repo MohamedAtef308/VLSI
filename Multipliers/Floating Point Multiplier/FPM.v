@@ -6,11 +6,10 @@ module FPMult (
     
     reg [23:0] mantissaA,mantissaB;
     reg [47:0] tempResult;
+    reg [22:0] finalMantissa;
     reg [7:0] expA, expB;
     reg [8:0] tempExp;
-    // reg [4:0] realShift;
-    wire [4:0] shiftAmount;
-    MSB MSBFP(tempResult[47:16], shiftAmount);
+    reg tempSign;
 
     always @(a,b) begin
         mantissaA = {1'b1,a[22:0]};
@@ -18,19 +17,18 @@ module FPMult (
         expA = a[30 : 23];
         expB = b[30 : 23];
         tempResult = 1'd0;
-
-        tempExp = expA + expB - 8'b01111111;
+        tempSign = a[31] ^ b[31];
+        test = 0;
 
         tempResult = mantissaA * mantissaB;
 
-        // if (shiftAmount) begin
-        //     tempResult = tempResult >> shiftAmount;
-        //     tempExp = tempExp + shiftAmount;
-        // end
+        tempExp = expA + expB - 8'b01111111 + tempResult[47];
+
+        finalMantissa = (tempResult[47] == 1'b1)? tempResult[46: 24]: tempResult[45:23];
 
     end
     
-    assign result [31] = a[31] ^ b[31];
+    assign result [31] = tempSign;
     assign result [30:23]  = tempExp[7:0];
-    assign result [22:0] = tempResult[46:23];
+    assign result [22:0] = finalMantissa;
 endmodule 
