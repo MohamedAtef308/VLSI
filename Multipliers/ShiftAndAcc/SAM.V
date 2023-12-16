@@ -1,22 +1,23 @@
 module SAM (
-  input [31:0] a,
-  input [31:0] b,
-  output wire [63:0] result,
-  output wire sign
+    input [31:0] a,
+    input [31:0] b,
+    output wire [63:0] result
 );
-
-  reg [63:0] temp;
-  integer i;
-  always @(*) begin
-    temp = 64'b0;
-    for (i = 0; i < 31; i = i + 1) begin
-      if (b[i]) begin
-        temp = temp + (a[30:0] << i);
-      end
+    reg [63:0] temp;
+    reg [31:0] tempA,tempB;
+    reg tempsign ;
+    
+    integer i;
+    always @(*) begin
+        tempsign =  a[31] ^ b[31];
+        tempA = a[31]?  ~a +1'b1:a;
+        tempB = b[31]? ~b +1'b1:b;
+        temp = 64'b0;
+        for (i = 0; i < 31; i = i + 1) begin
+            if (tempB[i]) begin
+                temp = temp + (tempA[30:0] << i);
+            end
+        end
     end
-  end
-
-  assign result = temp;
-  assign sign = (a[31] ^ b[31]) && (temp != 64'b0);
-  
+    assign result = tempsign?~temp +1'b1:temp;
 endmodule
