@@ -18,14 +18,19 @@ module FPMult (
         expB = b[30 : 23];
         tempResult = 1'd0;
         tempSign = a[31] ^ b[31];
-        test = 0;
 
+        if (a[30:0] == 31'd0 || b[30:0] == 31'd0)begin
+            finalMantissa = 23'd0;
+            tempExp = 9'd0;
+            tempSign = 1'b0;
+        end
+        else begin
         tempResult = mantissaA * mantissaB;
 
         tempExp = expA + expB - 8'b01111111 + tempResult[47];
 
         finalMantissa = (tempResult[47] == 1'b1)? tempResult[46: 24]: tempResult[45:23];
-
+        end
     end
     
     assign result [31] = tempSign;
