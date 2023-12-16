@@ -1,7 +1,7 @@
 module SAM (
     input [31:0] a,
     input [31:0] b,
-    output wire [63:0] result,
+    output wire [63:0] result
 );
     reg [63:0] temp;
     reg [31:0] tempA,tempB;
@@ -18,7 +18,6 @@ module SAM (
                 temp = temp + (tempA[30:0] << i);
             end
         end
-        temp =tempsign?~temp +1'b1:temp;
     end
-    assign result = temp;
+    assign result = tempsign?~temp +1'b1:temp;
 endmodule

@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module TB;
+module SAM_TB;
 
     reg [31:0] a;
     reg [31:0] b;
@@ -9,8 +9,7 @@ module TB;
     SAM uut (
         .a(a),
         .b(b),
-        .result(result),
-        .sign(sign)
+        .result(result)
     );
 
     // Clock generation
