@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module PlusAdderTestBench;
 
     reg [31:0] a;
