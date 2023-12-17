@@ -2,9 +2,10 @@ module FA (
  input  a,
  input b,
  input cin,
- output sum
+ output sum,
+ output cout
 );
 
-assign sum = a + b + cin;
+assign {cout,sum} = a + b + cin;
 
 endmodule

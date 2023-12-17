@@ -6,17 +6,16 @@ module CBAdder_4(
     output cout
 );
 
-    wire [3:0] PGCout;
-    wire [3:0] Sel; 
+    wire PCout;
+    wire [3:0] carries;
 
-    PGCalc PGcalculator(a, b, cin, PGCout, Sel);
+    PCalc Pcalculator(a, b, PCout);
 
-    FA bit0(a[0], b[0], cin, sum[0]);
-    FA bit1(a[1], b[1], PGCout[0], sum[1]);
-    FA bit2(a[2], b[2], PGCout[1], sum[2]);
-    FA bit3(a[3], b[3], PGCout[2], sum[3]);
+    FA bit0(a[0], b[0], cin, sum[0], carries[0]);
+    FA bit1(a[1], b[1], carries[0], sum[1], carries[1]);
+    FA bit2(a[2], b[2], carries[1], sum[2], carries[2]);
+    FA bit3(a[3], b[3], carries[2], sum[3], carries[3]);
 
-    MUX_2 CoutMux(PGCout[3], cin, (Sel[0] & Sel[1] & Sel[2] & Sel[3]), cout);
-
+    MUX_2 CoutMux(carries[3], cin, PCout, cout);
 
 endmodule

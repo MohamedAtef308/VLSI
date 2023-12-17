@@ -1,3 +1,4 @@
+`timescale 1ps/1ps
 module CSA_TB;
 
     reg [31:0] a;
