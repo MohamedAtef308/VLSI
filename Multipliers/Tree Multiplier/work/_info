@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/sofa5/Desktop/University/Third Year/1st Term/Archeticture/exam
+vBWAdder
+!s110 1703176114
+!i10b 1
+!s100 BzcE1J81EI_UX3>KET:Bb3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU:_nS>?g2NA4W^dVX@_gn3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier
+w1703176109
+8C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v
+FC:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v
+!i122 19
+L0 1 17
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1703176113.000000
+!s107 C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@b@w@adder
+vTM
+!s110 1703176059
+!i10b 1
+!s100 n;nFTjhLehRDde@d;Ig0`3
+R0
+I4=BaIZEQNP`28V]`[QLn;1
+R1
+R2
+w1703176025
+8C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v
+FC:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v
+!i122 18
+L0 1 122
+R3
+r1
+!s85 0
+31
+!s108 1703176058.000000
+!s107 C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v|
+!i113 1
+R4
+R5
+n@t@m
+vTM_tb
+!s110 1703175060
+!i10b 1
+!s100 d3[1:CgOm6:?AMjjAUi_93
+R0
+I9Z<M2IaeGLjHJi=Hn>c[M1
+R1
+R2
+w1703175001
+8C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v
+FC:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v
+!i122 17
+L0 2 108
+R3
+r1
+!s85 0
+31
+!s108 1703175060.000000
+!s107 C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v|
+!i113 1
+R4
+R5
+n@t@m_tb
+vTreeMultiplier
+!s110 1703174154
+!i10b 1
+!s100 lhFZ4D=o>eL3[59A8Pgo:0
+R0
+I278[@CFH`?gUfZY3?>onY2
+R1
+R2
+w1703173932
+8C:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\TM.v
+FC:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\TM.v
+!i122 10
+L0 1 120
+R3
+r1
+!s85 0
+31
+!s108 1703174154.000000
+!s107 C:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\TM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\TM.v|
+!i113 1
+R4
+R5
+n@tree@multiplier
