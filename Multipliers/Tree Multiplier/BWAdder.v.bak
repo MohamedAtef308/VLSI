@@ -1,0 +1,13 @@
+module BWAdder (
+  input [63:0] a,
+  input [63:0] b,
+  input [63:0] c,
+  output wire [63:0] result,
+  output wire [63:0] carry
+);
+  integer i;
+  for (i = 0; i < 64; i = i + 1) begin
+    assign result[i] = a[i] ^ b[i] ^ c[i];
+    assign carry[i] = (a[i] & b[i]) | (c[i] & ( a[i] ^ b[i]));
+  end
+endmodule
