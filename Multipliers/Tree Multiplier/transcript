@@ -64,3 +64,6 @@ run -all
 # ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(170)
 #    Time: 80 ps  Iteration: 0  Instance: /TM_tb
 # Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 170
+quit -sim
+# End time: 23:22:51 on Dec 22,2023, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 3
