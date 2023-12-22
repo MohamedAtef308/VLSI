@@ -1,4 +1,4 @@
-module TM_tb;
+module TM_TB;
 
     reg [31:0] a;
     reg [31:0] b;
