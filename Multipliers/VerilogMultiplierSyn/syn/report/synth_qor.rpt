@@ -1,17 +1,17 @@
  
 ****************************************
 Report : qor
-Design : VMSeq
+Design : TMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 17:03:12 2017
+Date   : Sun Jan  1 19:03:08 2017
 ****************************************
 
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:              68.00
-  Critical Path Length:          5.04
-  Critical Path Slack:           0.58
+  Levels of Logic:             138.00
+  Critical Path Length:          5.62
+  Critical Path Slack:           0.00
   Critical Path Clk Period:      6.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -23,12 +23,12 @@ Date   : Sun Jan  1 17:03:12 2017
 
   Cell Count
   -----------------------------------
-  Hierarchical Cell Count:          6
-  Hierarchical Port Count:        707
-  Leaf Cell Count:               3275
-  Buf/Inv Cell Count:             642
+  Hierarchical Cell Count:        131
+  Hierarchical Port Count:      20745
+  Leaf Cell Count:              17786
+  Buf/Inv Cell Count:            4566
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:      3147
+  Combinational Cell Count:     17658
   Sequential Cell Count:          128
   Macro Count:                      0
   -----------------------------------
@@ -36,18 +36,18 @@ Date   : Sun Jan  1 17:03:12 2017
 
   Area
   -----------------------------------
-  Combinational Area:     5831.518015
-  Noncombinational Area:   578.815979
-  Buf/Inv Area:            410.171996
+  Combinational Area:    21577.387810
+  Noncombinational Area:   767.144002
+  Buf/Inv Area:           2562.112014
   Net Area:                  0.000000
   -----------------------------------
-  Cell Area:              6410.333994
-  Design Area:            6410.333994
+  Cell Area:             22344.531812
+  Design Area:           22344.531812
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:          4403
+  Total Number of Nets:         18034
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -58,11 +58,11 @@ Date   : Sun Jan  1 17:03:12 2017
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    2.11
-  Logic Optimization:                  1.20
-  Mapping Optimization:                1.98
+  Resource Sharing:                    0.76
+  Logic Optimization:                  7.28
+  Mapping Optimization:               23.59
   -----------------------------------------
-  Overall Compile Time:                6.14
-  Overall Compile Wall Clock Time:     7.31
+  Overall Compile Time:               35.46
+  Overall Compile Wall Clock Time:    36.52
 
 1

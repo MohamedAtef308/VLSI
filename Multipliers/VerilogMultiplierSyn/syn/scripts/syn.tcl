@@ -1,4 +1,4 @@
-set design VMSeq
+set design TMSeq
 
 set_app_var search_path "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM \
 			 /home/mohamed/Desktop/mips "
@@ -10,18 +10,18 @@ sh rm -rf work
 sh mkdir -p work
 define_design_lib work -path ./work
 
-read_file -format verilog  ../rtl/CRAdder.v
+read_file -format verilog  ../rtl/BWAdder.v
 read_file -format verilog  ../rtl/CRAdder_64.v
 read_file -format verilog  ../rtl/FullAdder.v
 read_file -format verilog  ../rtl/regN.v
-read_file -format verilog  ../rtl/VM.v
-read_file -format verilog  ../rtl/VMSeq.v
-analyze -library work -format verilog ../rtl/CRAdder.v
+read_file -format verilog  ../rtl/TM.v
+read_file -format verilog  ../rtl/TMSeq.v
+analyze -library work -format verilog ../rtl/BWAdder.v
 analyze -library work -format verilog ../rtl/CRAdder_64.v
 analyze -library work -format verilog ../rtl/FullAdder.v
 analyze -library work -format verilog ../rtl/regN.v
-analyze -library work -format verilog ../rtl/VM.v
-analyze -library work -format verilog ../rtl/VMSeq.v
+analyze -library work -format verilog ../rtl/TM.v
+analyze -library work -format verilog ../rtl/TMSeq.v
 elaborate $design -lib work
 current_design 
 

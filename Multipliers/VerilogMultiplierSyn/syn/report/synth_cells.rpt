@@ -1,9 +1,9 @@
  
 ****************************************
 Report : cell
-Design : VMSeq
+Design : TMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 17:03:12 2017
+Date   : Sun Jan  1 19:03:08 2017
 ****************************************
 
 Attributes:
@@ -16,14 +16,14 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-multiplier                VM                              5682.558014
-                                                                    b, h
-outA                      regN_N64                        364.419990
+multiplier                TM                              21561.693810
+                                                                    h
+outA                      regN_N64                        391.818002
                                                                     h, n, p
-regA                      regN_N32_0                      181.677995
+regA                      regN_N32_0                      194.978000
                                                                     h, n, p
-regB                      regN_N32_1                      181.677995
+regB                      regN_N32_1                      196.042000
                                                                     h, n, p
 --------------------------------------------------------------------------------
-Total 4 cells                                             6410.333994
+Total 4 cells                                             22344.531812
 1

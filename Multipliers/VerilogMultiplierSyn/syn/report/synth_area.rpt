@@ -1,18 +1,13 @@
-Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
-Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
-Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
-Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
-Error: Too few ports on reference to 'CRAdder_64' in 'VM'. (LINK-4)
-Warning: Unable to resolve reference 'CRAdder_64' in 'VM'. (LINK-5)
  
 ****************************************
 Report : area
-Design : VMSeq
+Design : TMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 17:03:12 2017
+Date   : Sun Jan  1 19:03:07 2017
 ****************************************
 
 Information: Updating design information... (UID-85)
+Warning: Design 'TMSeq' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Library(s) Used:
 
     NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
@@ -26,13 +21,11 @@ Number of macros:                           0
 Number of buf/inv:                          0
 Number of references:                       4
 
-Combinational area:       5831.518015
-Buf/Inv area:              410.171996
-Noncombinational area:     578.815979
+Combinational area:       21577.387810
+Buf/Inv area:             2562.112014
+Noncombinational area:     767.144002
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:          6410.333994
+Total cell area:          22344.531812
 Total area:                 undefined
-
-Information: This design contains black box (unknown) components. (RPT-8)
 1
