@@ -1,11 +1,11 @@
-module VM_TB;
+module VM_tb;
 
     reg [31:0] a;
     reg [31:0] b;
     wire [63:0] result;
 
     // Instantiate the CSA module
-    Multiplier uut (
+    VM uut (
         .a(a),
         .b(b),
         .result(result)
