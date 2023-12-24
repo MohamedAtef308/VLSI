@@ -11,8 +11,8 @@ module BoothStep(
     wire [31:0] sumAM, subAM;
     wire coutSum, overflowSum;
     wire coutSub, overflowSub;
-    CSA sum(a, m, 1'b0, sumAM, coutSum, overflowSum);
-    CSA sub(a, ~m, 1'b1, subAM, coutSub, overflowSub);
+    CRAdder_32 sum(a, m, 1'b0, sumAM, coutSum, overflowSum);
+    CRAdder_32 sub(a, ~m, 1'b1, subAM, coutSub, overflowSub);
 
     always @(*) begin
         if({q[0], q_1} == 2'b01) begin
