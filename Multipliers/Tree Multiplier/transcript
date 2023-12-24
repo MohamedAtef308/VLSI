@@ -1,40 +1,73 @@
 # Compile of BWAdder.v was successful.
-# Compile of BWAdder.v was successful.
-# Load canceled
-vsim -gui work.TM
-# vsim -gui work.TM 
-# Start time: 23:18:54 on Dec 22,2023
-# Loading work.TM
-# Loading work.BWAdder
+# Compile of TM.v was successful.
+# Compile of TM_tb.v was successful.
+# Compile of CRAdder_64.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of regN.v was successful.
+# Compile of TMSeq.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.CRAdder_64
+# vsim -gui work.CRAdder_64 
+# Start time: 14:52:49 on Dec 24,2023
+# Loading work.CRAdder_64
+# Loading work.FullAdder
 add wave -position insertpoint  \
-sim:/TM/a \
-sim:/TM/b \
-sim:/TM/result
-force -freeze sim:/TM/a 32'd10 0
-force -freeze sim:/TM/b 32'd11 0
+sim:/CRAdder_64/a \
+sim:/CRAdder_64/b \
+sim:/CRAdder_64/cin \
+sim:/CRAdder_64/sum \
+sim:/CRAdder_64/cout \
+sim:/CRAdder_64/overflow
+force -freeze sim:/CRAdder_64/a 64'd10 0
+force -freeze sim:/CRAdder_64/b 64'd11 0
+force -freeze sim:/CRAdder_64/cin 1 0
 run
+force -freeze sim:/CRAdder_64/a -10 0
+run
+force -freeze sim:/CRAdder_64/b -5 0
+# Invalid binary digit: 5.
+# ** UI-Msg: (vsim-4011) Invalid force value: -5 0.
+# 
+run
+force -freeze sim:/CRAdder_64/b -5 0
+# Invalid binary digit: 5.
+# ** UI-Msg: (vsim-4011) Invalid force value: -5 0.
+# 
 quit -sim
-# End time: 23:19:55 on Dec 22,2023, Elapsed time: 0:01:01
+# End time: 14:59:05 on Dec 24,2023, Elapsed time: 0:06:16
 # Errors: 0, Warnings: 3
-vsim -gui work.TM_tb
-# vsim -gui work.TM_tb 
-# Start time: 23:20:12 on Dec 22,2023
-# Loading work.TM_tb
-# Loading work.TM
-# Loading work.BWAdder
-# Break key hit
-quit -sim
-# End time: 23:20:37 on Dec 22,2023, Elapsed time: 0:00:25
-# Errors: 0, Warnings: 1
-# Compile of TM_tb.v was successful.
-# Load canceled
+# Compile of TM_tb.v failed with 1 errors.
+# Compile of TM_tb.v failed with 1 errors.
+# Compile of TM_tb.v failed with 1 errors.
 # Compile of TM_tb.v was successful.
 vsim -gui work.TM_tb
 # vsim -gui work.TM_tb 
-# Start time: 23:21:09 on Dec 22,2023
+# Start time: 15:16:58 on Dec 24,2023
 # Loading work.TM_tb
+# Loading work.TMSeq
+# Loading work.regN
 # Loading work.TM
 # Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
+# ** Error: (vsim-3063) Port 'a' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /TM_tb/uut File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v Line: 12
+# ** Error: (vsim-3063) Port 'b' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /TM_tb/uut File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v Line: 12
+# Error loading design
+# End time: 15:16:59 on Dec 24,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 5
+# Compile of TM_tb.v was successful.
+vsim -gui work.TM_tb
+# vsim -gui work.TM_tb 
+# Start time: 15:17:42 on Dec 24,2023
+# Loading work.TM_tb
+# Loading work.TMSeq
+# Loading work.regN
+# Loading work.TM
+# Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
 add wave -position insertpoint  \
 sim:/TM_tb/a \
 sim:/TM_tb/b \
@@ -43,27 +76,234 @@ sim:/TM_tb/clk \
 sim:/TM_tb/faildTestCases \
 sim:/TM_tb/passedTestCases
 run -all
-# Test Case#1 passed
+# Test Case#1 failed +:
+# a = 00000032, b = ffffffd8
+# result = 0000000000000000
 # =====================
-# Test Case#2 passed
+# Test Case#2 failed +:
+# a = 0000005a, b = 00000046
+# result = 0000000000000000
 # =====================
-# Test Case#3 passed
+# Test Case#3 failed +:
+# a = ffffffb0, b = ffffffbf
+# result = 0000000000000000
 # =====================
-# Test Case#4 passed
+# Test Case#4 failed +:
+# a = fffffff6, b = 00000145
+# result = 0000000000000000
 # =====================
 # Test Case#5 passed
 # =====================
-# Test Case#6 passed
+# Test Case#6 failed +:
+# a = 000181cd, b = 00000001
+# result = 0000000000000000
 # =====================
-# Test Case#7 passed
+# Test Case#7 failed +:
+# a = fffffe0c, b = 000007d0
+# result = 0000000000000000
 # =====================
-# Test Case#8 passed
+# Test Case#8 failed +:
+# a = fffffc19, b = 000003e7
+# result = 0000000000000000
 # =====================
-# Number of passed test cases:00000008
-# Number of failed test cases:00000000
-# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(170)
+# Number of passed test cases:00000001
+# Number of failed test cases:00000007
+# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(173)
 #    Time: 80 ps  Iteration: 0  Instance: /TM_tb
-# Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 170
+# Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 173
 quit -sim
-# End time: 23:22:51 on Dec 22,2023, Elapsed time: 0:01:42
-# Errors: 0, Warnings: 3
+# End time: 15:19:47 on Dec 24,2023, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 2
+vsim -gui work.TMSeq
+# vsim -gui work.TMSeq 
+# Start time: 15:22:40 on Dec 24,2023
+# Loading work.TMSeq
+# Loading work.regN
+# Loading work.TM
+# Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
+add wave -position insertpoint sim:/TMSeq/*
+force -freeze sim:/TMSeq/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/TMSeq/reset 1 0
+quit -sim
+# End time: 15:23:30 on Dec 24,2023, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 1
+# Compile of TM_tb.v was successful.
+vsim -gui work.TM_tb
+# vsim -gui work.TM_tb 
+# Start time: 15:23:50 on Dec 24,2023
+# Loading work.TM_tb
+# Loading work.TMSeq
+# Loading work.regN
+# Loading work.TM
+# Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
+add wave -position insertpoint  \
+sim:/TM_tb/a \
+sim:/TM_tb/b \
+sim:/TM_tb/result \
+sim:/TM_tb/clk \
+sim:/TM_tb/faildTestCases \
+sim:/TM_tb/passedTestCases
+run
+# Test Case#1 failed +:
+# a = 00000032, b = ffffffd8
+# result = xxxxxxxxxxxxxxxx
+# =====================
+# Test Case#2 failed +:
+# a = 0000005a, b = 00000046
+# result = fffffffffffff830
+# =====================
+# Test Case#3 failed +:
+# a = ffffffb0, b = ffffffbf
+# result = 000000000000189c
+# =====================
+# Test Case#4 failed +:
+# a = fffffff6, b = 00000145
+# result = 0000000000001450
+# =====================
+# Test Case#5 failed +:
+# a = 000181c4, b = 00000000
+# result = fffffffffffff34e
+# =====================
+# Test Case#6 failed +:
+# a = 000181cd, b = 00000001
+# result = 0000000000000000
+# =====================
+# Test Case#7 failed +:
+# a = fffffe0c, b = 000007d0
+# result = 00000000000181cd
+# =====================
+# Test Case#8 failed +:
+# a = fffffc19, b = 000003e7
+# result = fffffffffff0bdc0
+# =====================
+# Number of passed test cases:00000000
+# Number of failed test cases:00000008
+# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(173)
+#    Time: 80 ps  Iteration: 0  Instance: /TM_tb
+# Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 173
+quit -sim
+# End time: 15:33:30 on Dec 24,2023, Elapsed time: 0:09:40
+# Errors: 0, Warnings: 2
+# Compile of TM_tb.v was successful.
+vsim -gui work.TM_tb
+# vsim -gui work.TM_tb 
+# Start time: 15:34:24 on Dec 24,2023
+# Loading work.TM_tb
+# Loading work.TMSeq
+# Loading work.regN
+# Loading work.TM
+# Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
+add wave -position insertpoint  \
+sim:/TM_tb/a \
+sim:/TM_tb/b \
+sim:/TM_tb/result \
+sim:/TM_tb/clk \
+sim:/TM_tb/faildTestCases \
+sim:/TM_tb/passedTestCases
+run -all
+# Test Case#1 failed +:
+# a = 00000032, b = ffffffd8
+# result = xxxxxxxxxxxxxxxx
+# =====================
+# Test Case#2 failed +:
+# a = 0000005a, b = 00000046
+# result = fffffffffffff830
+# =====================
+# Test Case#3 failed +:
+# a = ffffffb0, b = ffffffbf
+# result = 000000000000189c
+# =====================
+# Test Case#4 failed +:
+# a = fffffff6, b = 00000145
+# result = 0000000000001450
+# =====================
+# Test Case#5 failed +:
+# a = 000181c4, b = 00000000
+# result = fffffffffffff34e
+# =====================
+# Test Case#6 failed +:
+# a = 000181cd, b = 00000001
+# result = 0000000000000000
+# =====================
+# Test Case#7 failed +:
+# a = fffffe0c, b = 000007d0
+# result = 00000000000181cd
+# =====================
+# Test Case#8 failed +:
+# a = fffffc19, b = 000003e7
+# result = fffffffffff0bdc0
+# =====================
+# Number of passed test cases:00000000
+# Number of failed test cases:00000008
+# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(173)
+#    Time: 80 ps  Iteration: 0  Instance: /TM_tb
+# Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 173
+quit -sim
+# End time: 15:37:26 on Dec 24,2023, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 2
+# Compile of TM_tb.v was successful.
+vsim -gui work.TMSeq_TB
+# vsim -gui work.TMSeq_TB 
+# Start time: 15:37:41 on Dec 24,2023
+# Loading work.TMSeq_TB
+# Loading work.TMSeq
+# Loading work.regN
+# Loading work.TM
+# Loading work.BWAdder
+# Loading work.CRAdder_64
+# Loading work.FullAdder
+add wave -position insertpoint  \
+sim:/TMSeq_TB/a \
+sim:/TMSeq_TB/b \
+sim:/TMSeq_TB/result \
+sim:/TMSeq_TB/clk \
+sim:/TMSeq_TB/reset \
+sim:/TMSeq_TB/faildTestCases \
+sim:/TMSeq_TB/passedTestCases
+run -all
+# Test Case#1 failed +:
+# a = 00000032, b = ffffffd8
+# result = xxxxxxxxxxxxxxxx
+# =====================
+# Test Case#2 failed +:
+# a = 0000005a, b = 00000046
+# result = fffffffffffff830
+# =====================
+# Test Case#3 failed +:
+# a = ffffffb0, b = ffffffbf
+# result = 000000000000189c
+# =====================
+# Test Case#4 failed +:
+# a = fffffff6, b = 00000145
+# result = 0000000000001450
+# =====================
+# Test Case#5 failed +:
+# a = 000181c4, b = 00000000
+# result = fffffffffffff34e
+# =====================
+# Test Case#6 failed +:
+# a = 000181cd, b = 00000001
+# result = 0000000000000000
+# =====================
+# Test Case#7 failed +:
+# a = fffffe0c, b = 000007d0
+# result = 00000000000181cd
+# =====================
+# Test Case#8 failed +:
+# a = fffffc19, b = 000003e7
+# result = fffffffffff0bdc0
+# =====================
+# Number of passed test cases:00000000
+# Number of failed test cases:00000008
+# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(174)
+#    Time: 100 ps  Iteration: 0  Instance: /TMSeq_TB
+# Break in Module TMSeq_TB at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 174
+quit -sim
+# End time: 15:38:25 on Dec 24,2023, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 2

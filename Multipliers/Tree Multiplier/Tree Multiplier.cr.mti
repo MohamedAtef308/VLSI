@@ -1,15 +1,50 @@
-{C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v} {1 {vlog -work work -stats=none {C:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\BWAdder.v}
+{C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TM
+
+Top level modules:
+	TM
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module BWAdder
 
 Top level modules:
 	BWAdder
 
-} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v}
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module TM
+-- Compiling module TMSeq_TB
 
 Top level modules:
-	TM
+	TMSeq_TB
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TMSeq
+
+Top level modules:
+	TMSeq
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CRAdder_64
+
+Top level modules:
+	CRAdder_64
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/FullAdder.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/FullAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FullAdder
+
+Top level modules:
+	FullAdder
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/regN.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/regN.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regN
+
+Top level modules:
+	regN
 
 } {} {}}

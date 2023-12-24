@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TreeMultiplier
-Thu Dec 21 18:31:21 2023
+Sun Dec 24 15:41:33 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -14,31 +14,35 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "BWAdder:adder_7"
- 10. Port Connectivity Checks: "BWAdder:level1[20].adder"
- 11. Port Connectivity Checks: "BWAdder:level1[19].adder"
- 12. Port Connectivity Checks: "BWAdder:level1[18].adder"
- 13. Port Connectivity Checks: "BWAdder:level1[17].adder"
- 14. Port Connectivity Checks: "BWAdder:level1[16].adder"
- 15. Port Connectivity Checks: "BWAdder:level1[15].adder"
- 16. Port Connectivity Checks: "BWAdder:level1[14].adder"
- 17. Port Connectivity Checks: "BWAdder:level1[13].adder"
- 18. Port Connectivity Checks: "BWAdder:level1[12].adder"
- 19. Port Connectivity Checks: "BWAdder:level1[11].adder"
- 20. Port Connectivity Checks: "BWAdder:level1[10].adder"
- 21. Port Connectivity Checks: "BWAdder:level1[9].adder"
- 22. Port Connectivity Checks: "BWAdder:level1[8].adder"
- 23. Port Connectivity Checks: "BWAdder:level1[7].adder"
- 24. Port Connectivity Checks: "BWAdder:level1[6].adder"
- 25. Port Connectivity Checks: "BWAdder:level1[5].adder"
- 26. Port Connectivity Checks: "BWAdder:level1[4].adder"
- 27. Port Connectivity Checks: "BWAdder:level1[3].adder"
- 28. Port Connectivity Checks: "BWAdder:level1[2].adder"
- 29. Port Connectivity Checks: "BWAdder:level1[1].adder"
- 30. Port Connectivity Checks: "BWAdder:level1[0].adder"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: regN:regA
+ 10. Parameter Settings for User Entity Instance: regN:regB
+ 11. Parameter Settings for User Entity Instance: regN:outA
+ 12. Port Connectivity Checks: "TM:multiplier|CRAdder_64:CRAdd"
+ 13. Port Connectivity Checks: "TM:multiplier|BWAdder:adder_7"
+ 14. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[20].adder"
+ 15. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[19].adder"
+ 16. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[18].adder"
+ 17. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[17].adder"
+ 18. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[16].adder"
+ 19. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[15].adder"
+ 20. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[14].adder"
+ 21. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[13].adder"
+ 22. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[12].adder"
+ 23. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[11].adder"
+ 24. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[10].adder"
+ 25. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[9].adder"
+ 26. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[8].adder"
+ 27. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[7].adder"
+ 28. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[6].adder"
+ 29. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[5].adder"
+ 30. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[4].adder"
+ 31. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[3].adder"
+ 32. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[2].adder"
+ 33. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[1].adder"
+ 34. Port Connectivity Checks: "TM:multiplier|BWAdder:level1[0].adder"
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -65,14 +69,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 21 18:31:21 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 24 15:41:33 2023       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; TreeMultiplier                              ;
-; Top-level Entity Name           ; TM                                          ;
+; Top-level Entity Name           ; TMSeq                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 128                                         ;
+; Total registers                 ; 128                                         ;
+; Total pins                      ; 130                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -90,8 +94,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; TM                 ; TreeMultiplier     ;
+; Device                                                                          ; 5CGTFD9E5F35C7     ;                    ;
+; Top-level entity name                                                           ; TMSeq              ; TreeMultiplier     ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -181,121 +185,180 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
-; BWAdder.v                        ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v ;         ;
-; TM.v                             ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v      ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; TMSeq.v                          ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v      ;         ;
+; regN.v                           ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/regN.v       ;         ;
+; FullAdder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/FullAdder.v  ;         ;
+; CRAdder_64.v                     ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v ;         ;
+; BWAdder.v                        ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v    ;         ;
+; TM.v                             ; yes             ; User Verilog HDL File  ; C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v         ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 2060        ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 3013        ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 1106        ;
-;     -- 5 input functions                    ; 740         ;
-;     -- 4 input functions                    ; 367         ;
-;     -- <=3 input functions                  ; 800         ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 128         ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; b[31]~input ;
-; Maximum fan-out                             ; 133         ;
-; Total fan-out                               ; 14339       ;
-; Average fan-out                             ; 4.39        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 2094              ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 3414              ;
+;     -- 7 input functions                    ; 0                 ;
+;     -- 6 input functions                    ; 765               ;
+;     -- 5 input functions                    ; 615               ;
+;     -- 4 input functions                    ; 393               ;
+;     -- <=3 input functions                  ; 1641              ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 128               ;
+;                                             ;                   ;
+; I/O pins                                    ; 130               ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; regN:regB|out[31] ;
+; Maximum fan-out                             ; 131               ;
+; Total fan-out                               ; 14342             ;
+; Average fan-out                             ; 3.77              ;
++---------------------------------------------+-------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; |TM                            ; 3013 (74)           ; 0 (0)                     ; 0                 ; 0          ; 128  ; 0            ; |TM                           ; TM          ; work         ;
-;    |BWAdder:adder_0|           ; 79 (79)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_0           ; BWAdder     ; work         ;
-;    |BWAdder:adder_1|           ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_1           ; BWAdder     ; work         ;
-;    |BWAdder:adder_2|           ; 62 (62)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_2           ; BWAdder     ; work         ;
-;    |BWAdder:adder_3|           ; 88 (88)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_3           ; BWAdder     ; work         ;
-;    |BWAdder:adder_4|           ; 71 (71)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_4           ; BWAdder     ; work         ;
-;    |BWAdder:adder_5|           ; 106 (106)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_5           ; BWAdder     ; work         ;
-;    |BWAdder:adder_6|           ; 58 (58)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_6           ; BWAdder     ; work         ;
-;    |BWAdder:adder_7|           ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder_7           ; BWAdder     ; work         ;
-;    |BWAdder:adder|             ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:adder             ; BWAdder     ; work         ;
-;    |BWAdder:level1[0].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[0].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[10].adder|  ; 61 (61)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[10].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[11].adder|  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[11].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[12].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[12].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[13].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[13].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[14].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[14].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[15].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[15].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[16].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[16].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[17].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[17].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[18].adder|  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[18].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[19].adder|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[19].adder  ; BWAdder     ; work         ;
-;    |BWAdder:level1[1].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[1].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[2].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[2].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[3].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[3].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[4].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[4].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[5].adder|   ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[5].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[6].adder|   ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[6].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[7].adder|   ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[7].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[8].adder|   ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[8].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level1[9].adder|   ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level1[9].adder   ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[0].adder| ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[1].adder| ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[2].adder| ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[3].adder| ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[3].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[4].adder| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[4].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[5].adder| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[5].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_a[6].adder| ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_a[6].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[0].adder| ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[1].adder| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[2].adder| ; 50 (50)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[3].adder| ; 42 (42)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[3].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[4].adder| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[4].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[5].adder| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[5].adder ; BWAdder     ; work         ;
-;    |BWAdder:level2_b[6].adder| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level2_b[6].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_a[0].adder| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_a[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_a[1].adder| ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_a[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_a[2].adder| ; 80 (80)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_a[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_a[3].adder| ; 67 (67)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_a[3].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_b[0].adder| ; 56 (56)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_b[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_b[1].adder| ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_b[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_b[2].adder| ; 55 (55)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_b[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level3_b[3].adder| ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level3_b[3].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_a[0].adder| ; 91 (91)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_a[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_a[1].adder| ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_a[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_a[2].adder| ; 77 (77)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_a[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_b[0].adder| ; 102 (102)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_b[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_b[1].adder| ; 54 (54)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_b[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level4_b[2].adder| ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level4_b[2].adder ; BWAdder     ; work         ;
-;    |BWAdder:level5_a[0].adder| ; 106 (106)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level5_a[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level5_a[1].adder| ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level5_a[1].adder ; BWAdder     ; work         ;
-;    |BWAdder:level5_b[0].adder| ; 72 (72)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level5_b[0].adder ; BWAdder     ; work         ;
-;    |BWAdder:level5_b[1].adder| ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TM|BWAdder:level5_b[1].adder ; BWAdder     ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                          ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-------------+--------------+
+; |TMSeq                               ; 3414 (0)            ; 128 (0)                   ; 0                 ; 0          ; 130  ; 0            ; |TMSeq                                                          ; TMSeq       ; work         ;
+;    |TM:multiplier|                   ; 3414 (10)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier                                            ; TM          ; work         ;
+;       |BWAdder:adder_0|              ; 77 (77)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_0                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_1|              ; 85 (85)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_1                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_2|              ; 61 (61)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_2                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_3|              ; 88 (88)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_3                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_4|              ; 87 (87)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_4                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_5|              ; 106 (106)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_5                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_6|              ; 87 (87)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_6                            ; BWAdder     ; work         ;
+;       |BWAdder:adder_7|              ; 84 (84)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder_7                            ; BWAdder     ; work         ;
+;       |BWAdder:adder|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:adder                              ; BWAdder     ; work         ;
+;       |BWAdder:level1[0].adder|      ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[0].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[10].adder|     ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[10].adder                   ; BWAdder     ; work         ;
+;       |BWAdder:level1[11].adder|     ; 53 (53)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[11].adder                   ; BWAdder     ; work         ;
+;       |BWAdder:level1[1].adder|      ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[1].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[2].adder|      ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[2].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[3].adder|      ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[3].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[4].adder|      ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[4].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[5].adder|      ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[5].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[6].adder|      ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[6].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[7].adder|      ; 62 (62)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[7].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[8].adder|      ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[8].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level1[9].adder|      ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level1[9].adder                    ; BWAdder     ; work         ;
+;       |BWAdder:level2_a[0].adder|    ; 64 (64)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_a[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_a[1].adder|    ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_a[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_a[2].adder|    ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_a[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_a[3].adder|    ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_a[3].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_a[4].adder|    ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_a[4].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_b[0].adder|    ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_b[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_b[1].adder|    ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_b[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_b[2].adder|    ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_b[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_b[3].adder|    ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_b[3].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level2_b[4].adder|    ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level2_b[4].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_a[0].adder|    ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_a[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_a[1].adder|    ; 54 (54)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_a[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_a[2].adder|    ; 77 (77)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_a[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_a[3].adder|    ; 68 (68)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_a[3].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_b[0].adder|    ; 71 (71)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_b[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_b[1].adder|    ; 46 (46)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_b[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_b[2].adder|    ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_b[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level3_b[3].adder|    ; 59 (59)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level3_b[3].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_a[0].adder|    ; 100 (100)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_a[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_a[1].adder|    ; 81 (81)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_a[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_a[2].adder|    ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_a[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_b[0].adder|    ; 91 (91)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_b[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_b[1].adder|    ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_b[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level4_b[2].adder|    ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level4_b[2].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level5_a[0].adder|    ; 108 (108)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level5_a[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level5_a[1].adder|    ; 96 (96)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level5_a[1].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level5_b[0].adder|    ; 79 (79)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level5_b[0].adder                  ; BWAdder     ; work         ;
+;       |BWAdder:level5_b[1].adder|    ; 58 (58)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|BWAdder:level5_b[1].adder                  ; BWAdder     ; work         ;
+;       |CRAdder_64:CRAdd|             ; 161 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd                           ; CRAdder_64  ; work         ;
+;          |FullAdder:bit63|           ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit63           ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[10].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[10].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[11].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[11].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[12].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[12].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[13].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[13].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[14].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[14].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[15].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[15].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[16].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[16].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[17].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[17].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[18].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[18].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[19].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[19].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[20].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[20].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[21].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[21].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[22].bit| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[22].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[23].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[23].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[24].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[24].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[25].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[25].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[26].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[26].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[27].bit| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[27].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[28].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[28].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[29].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[29].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[30].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[30].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[31].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[31].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[32].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[32].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[33].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[33].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[34].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[34].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[35].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[35].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[36].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[36].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[37].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[37].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[38].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[38].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[39].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[39].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[40].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[40].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[41].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[41].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[42].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[42].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[43].bit| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[43].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[44].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[44].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[45].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[45].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[46].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[46].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[47].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[47].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[48].bit| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[48].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[49].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[49].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[50].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[50].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[51].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[51].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[52].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[52].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[53].bit| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[53].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[54].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[54].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[55].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[55].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[56].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[56].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[57].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[57].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[58].bit| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[58].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[59].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[59].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[60].bit| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[60].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[61].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[61].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[62].bit| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[62].bit ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[7].bit|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[7].bit  ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[8].bit|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[8].bit  ; FullAdder   ; work         ;
+;          |FullAdder:bit_gen[9].bit|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit_gen[9].bit  ; FullAdder   ; work         ;
+;    |regN:outA|                       ; 0 (0)               ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|regN:outA                                                ; regN        ; work         ;
+;    |regN:regA|                       ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|regN:regA                                                ; regN        ; work         ;
+;    |regN:regB|                       ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TMSeq|regN:regB                                                ; regN        ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -304,8 +367,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 128   ;
+; Number of registers using Synchronous Clear  ; 128   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -314,243 +377,284 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "BWAdder:adder_7" ;
-+----------+-------+----------+---------------+
-; Port     ; Type  ; Severity ; Details       ;
-+----------+-------+----------+---------------+
-; b[62..0] ; Input ; Info     ; Stuck at GND  ;
-+----------+-------+----------+---------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regN:regA ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 32    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[20].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[59..0] ; Input ; Info     ; Stuck at GND           ;
-; b[60..0] ; Input ; Info     ; Stuck at GND           ;
-; c[61..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regN:regB ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 32    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[19].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[56..0] ; Input ; Info     ; Stuck at GND           ;
-; b[57..0] ; Input ; Info     ; Stuck at GND           ;
-; c[58..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regN:outA ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 64    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[18].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[53..0] ; Input ; Info     ; Stuck at GND           ;
-; b[54..0] ; Input ; Info     ; Stuck at GND           ;
-; c[55..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|CRAdder_64:CRAdd"                                                         ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cin      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[17].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[50..0] ; Input ; Info     ; Stuck at GND           ;
-; b[51..0] ; Input ; Info     ; Stuck at GND           ;
-; c[52..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:adder_7" ;
++----------+-------+----------+-----------------------------+
+; Port     ; Type  ; Severity ; Details                     ;
++----------+-------+----------+-----------------------------+
+; b[62..0] ; Input ; Info     ; Stuck at GND                ;
++----------+-------+----------+-----------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[16].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[47..0] ; Input ; Info     ; Stuck at GND           ;
-; b[48..0] ; Input ; Info     ; Stuck at GND           ;
-; c[49..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[20].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[59..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[60..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[61..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[15].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[44..0] ; Input ; Info     ; Stuck at GND           ;
-; b[45..0] ; Input ; Info     ; Stuck at GND           ;
-; c[46..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[19].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[56..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[57..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[58..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[14].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[41..0] ; Input ; Info     ; Stuck at GND           ;
-; b[42..0] ; Input ; Info     ; Stuck at GND           ;
-; c[43..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[18].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[53..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[54..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[55..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[13].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[38..0] ; Input ; Info     ; Stuck at GND           ;
-; b[39..0] ; Input ; Info     ; Stuck at GND           ;
-; c[40..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[17].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[50..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[51..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[52..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[12].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[35..0] ; Input ; Info     ; Stuck at GND           ;
-; b[36..0] ; Input ; Info     ; Stuck at GND           ;
-; c[37..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[16].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[47..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[48..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[49..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[11].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[32..0] ; Input ; Info     ; Stuck at GND           ;
-; b[33..0] ; Input ; Info     ; Stuck at GND           ;
-; c[34..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[15].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[44..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[45..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[46..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[10].adder" ;
-+----------+-------+----------+------------------------+
-; Port     ; Type  ; Severity ; Details                ;
-+----------+-------+----------+------------------------+
-; a[29..0] ; Input ; Info     ; Stuck at GND           ;
-; b[30..0] ; Input ; Info     ; Stuck at GND           ;
-; c[31..0] ; Input ; Info     ; Stuck at GND           ;
-+----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[14].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[41..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[42..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[43..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[9].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[26..0] ; Input ; Info     ; Stuck at GND          ;
-; b[27..0] ; Input ; Info     ; Stuck at GND          ;
-; c[28..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[13].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[38..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[39..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[40..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[8].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[23..0] ; Input ; Info     ; Stuck at GND          ;
-; b[24..0] ; Input ; Info     ; Stuck at GND          ;
-; c[25..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[12].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[35..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[36..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[37..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[7].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[20..0] ; Input ; Info     ; Stuck at GND          ;
-; b[21..0] ; Input ; Info     ; Stuck at GND          ;
-; c[22..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[11].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[32..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[33..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[34..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[6].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[17..0] ; Input ; Info     ; Stuck at GND          ;
-; b[18..0] ; Input ; Info     ; Stuck at GND          ;
-; c[19..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[10].adder" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; a[29..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[30..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[31..0] ; Input ; Info     ; Stuck at GND                         ;
++----------+-------+----------+--------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[5].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[14..0] ; Input ; Info     ; Stuck at GND          ;
-; b[15..0] ; Input ; Info     ; Stuck at GND          ;
-; c[16..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[9].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[26..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[27..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[28..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[4].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[11..0] ; Input ; Info     ; Stuck at GND          ;
-; b[12..0] ; Input ; Info     ; Stuck at GND          ;
-; c[13..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[8].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[23..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[24..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[25..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[3].adder" ;
-+----------+-------+----------+-----------------------+
-; Port     ; Type  ; Severity ; Details               ;
-+----------+-------+----------+-----------------------+
-; a[8..0]  ; Input ; Info     ; Stuck at GND          ;
-; b[9..0]  ; Input ; Info     ; Stuck at GND          ;
-; c[10..0] ; Input ; Info     ; Stuck at GND          ;
-+----------+-------+----------+-----------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[7].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[20..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[21..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[22..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[2].adder" ;
-+---------+-------+----------+------------------------+
-; Port    ; Type  ; Severity ; Details                ;
-+---------+-------+----------+------------------------+
-; a[5..0] ; Input ; Info     ; Stuck at GND           ;
-; b[6..0] ; Input ; Info     ; Stuck at GND           ;
-; c[7..0] ; Input ; Info     ; Stuck at GND           ;
-+---------+-------+----------+------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[6].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[17..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[18..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[19..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[1].adder" ;
-+---------+-------+----------+------------------------+
-; Port    ; Type  ; Severity ; Details                ;
-+---------+-------+----------+------------------------+
-; a[2..0] ; Input ; Info     ; Stuck at GND           ;
-; b[3..0] ; Input ; Info     ; Stuck at GND           ;
-; c[4..0] ; Input ; Info     ; Stuck at GND           ;
-+---------+-------+----------+------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[5].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[14..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[15..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[16..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "BWAdder:level1[0].adder" ;
-+---------+-------+----------+------------------------+
-; Port    ; Type  ; Severity ; Details                ;
-+---------+-------+----------+------------------------+
-; b[0]    ; Input ; Info     ; Stuck at GND           ;
-; c[1..0] ; Input ; Info     ; Stuck at GND           ;
-+---------+-------+----------+------------------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[4].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[11..0] ; Input ; Info     ; Stuck at GND                        ;
+; b[12..0] ; Input ; Info     ; Stuck at GND                        ;
+; c[13..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[3].adder" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; a[8..0]  ; Input ; Info     ; Stuck at GND                        ;
+; b[9..0]  ; Input ; Info     ; Stuck at GND                        ;
+; c[10..0] ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[2].adder" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; a[5..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[6..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[7..0] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[1].adder" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; a[2..0] ; Input ; Info     ; Stuck at GND                         ;
+; b[3..0] ; Input ; Info     ; Stuck at GND                         ;
+; c[4..0] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "TM:multiplier|BWAdder:level1[0].adder" ;
++---------+-------+----------+--------------------------------------+
+; Port    ; Type  ; Severity ; Details                              ;
++---------+-------+----------+--------------------------------------+
+; b[0]    ; Input ; Info     ; Stuck at GND                         ;
+; c[1..0] ; Input ; Info     ; Stuck at GND                         ;
++---------+-------+----------+--------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -558,21 +662,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 3013                        ;
-;     arith             ; 64                          ;
-;         0 data inputs ; 1                           ;
-;         4 data inputs ; 6                           ;
-;         5 data inputs ; 57                          ;
-;     normal            ; 2949                        ;
-;         2 data inputs ; 117                         ;
-;         3 data inputs ; 682                         ;
-;         4 data inputs ; 361                         ;
-;         5 data inputs ; 683                         ;
-;         6 data inputs ; 1106                        ;
-; boundary_port         ; 128                         ;
+; arriav_ff             ; 128                         ;
+;     SCLR              ; 128                         ;
+; arriav_lcell_comb     ; 3414                        ;
+;     normal            ; 3414                        ;
+;         2 data inputs ; 396                         ;
+;         3 data inputs ; 1245                        ;
+;         4 data inputs ; 393                         ;
+;         5 data inputs ; 615                         ;
+;         6 data inputs ; 765                         ;
+; boundary_port         ; 130                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.80                       ;
-; Average LUT depth     ; 10.62                       ;
+; Max LUT depth         ; 27.00                       ;
+; Average LUT depth     ; 19.17                       ;
 +-----------------------+-----------------------------+
 
 
@@ -581,7 +683,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:18     ;
+; Top            ; 00:00:22     ;
 +----------------+--------------+
 
 
@@ -591,27 +693,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Thu Dec 21 18:30:47 2023
+    Info: Processing started: Sun Dec 24 15:40:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TreeMultiplier -c TreeMultiplier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tmseq.v
+    Info (12023): Found entity 1: TMSeq File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regn.v
+    Info (12023): Found entity 1: regN File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/regN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
+    Info (12023): Found entity 1: FullAdder File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/FullAdder.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at CRAdder_64.v(16): "bit" is SystemVerilog-2005 keyword File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file cradder_64.v
+    Info (12023): Found entity 1: CRAdder_64 File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bwadder.v
     Info (12023): Found entity 1: BWAdder File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tm.v
     Info (12023): Found entity 1: TM File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v Line: 1
-Info (12127): Elaborating entity "TM" for the top level hierarchy
-Info (12128): Elaborating entity "BWAdder" for hierarchy "BWAdder:level1[0].adder" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v Line: 24
+Info (12127): Elaborating entity "TMSeq" for the top level hierarchy
+Info (12128): Elaborating entity "regN" for hierarchy "regN:regA" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v Line: 19
+Info (12128): Elaborating entity "TM" for hierarchy "TM:multiplier" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v Line: 30
+Info (12128): Elaborating entity "BWAdder" for hierarchy "TM:multiplier|BWAdder:level1[0].adder" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v Line: 24
+Info (12128): Elaborating entity "CRAdder_64" for hierarchy "TM:multiplier|CRAdder_64:CRAdd" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v Line: 120
+Info (12128): Elaborating entity "FullAdder" for hierarchy "TM:multiplier|CRAdder_64:CRAdd|FullAdder:bit0" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/CRAdder_64.v Line: 12
+Info (12128): Elaborating entity "regN" for hierarchy "regN:outA" File: C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TMSeq.v Line: 36
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3141 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 64 input pins
+Info (21057): Implemented 3608 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
     Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 3013 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Thu Dec 21 18:31:21 2023
-    Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21061): Implemented 3478 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Sun Dec 24 15:41:33 2023
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:31
 
 

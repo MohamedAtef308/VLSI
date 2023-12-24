@@ -1,0 +1,1060 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : VMSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 17:03:12 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U61/ZN (OAI21_X1)               0.04       4.69 f
+  multiplier/mult_17/FS_1/U53/ZN (AOI21_X1)               0.05       4.74 r
+  multiplier/mult_17/FS_1/U51/ZN (OAI21_X1)               0.04       4.78 f
+  multiplier/mult_17/FS_1/U43/ZN (AOI21_X1)               0.05       4.83 r
+  multiplier/mult_17/FS_1/U41/ZN (OAI21_X1)               0.04       4.87 f
+  multiplier/mult_17/FS_1/U40/Z (XOR2_X1)                 0.07       4.94 f
+  multiplier/mult_17/FS_1/SUM[61] (VM_DW01_add_0)         0.00       4.94 f
+  multiplier/mult_17/PRODUCT[63] (VM_DW02_mult_0)         0.00       4.94 f
+  multiplier/U185/ZN (AOI22_X1)                           0.04       4.98 r
+  multiplier/U184/ZN (INV_X1)                             0.02       5.00 f
+  multiplier/result[63] (VM)                              0.00       5.00 f
+  outA/in[63] (regN_N64)                                  0.00       5.00 f
+  outA/U3/ZN (AND2_X1)                                    0.03       5.03 f
+  outA/out_reg[63]/D (DFF_X1)                             0.01       5.04 f
+  data arrival time                                                  5.04
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[63]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -5.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[62]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U61/ZN (OAI21_X1)               0.04       4.69 f
+  multiplier/mult_17/FS_1/U53/ZN (AOI21_X1)               0.05       4.74 r
+  multiplier/mult_17/FS_1/U51/ZN (OAI21_X1)               0.04       4.78 f
+  multiplier/mult_17/FS_1/U43/ZN (AOI21_X1)               0.05       4.83 r
+  multiplier/mult_17/FS_1/U42/Z (XOR2_X1)                 0.07       4.91 r
+  multiplier/mult_17/FS_1/SUM[60] (VM_DW01_add_0)         0.00       4.91 r
+  multiplier/mult_17/PRODUCT[62] (VM_DW02_mult_0)         0.00       4.91 r
+  multiplier/U183/ZN (AOI22_X1)                           0.03       4.94 f
+  multiplier/U182/ZN (INV_X1)                             0.03       4.97 r
+  multiplier/result[62] (VM)                              0.00       4.97 r
+  outA/in[62] (regN_N64)                                  0.00       4.97 r
+  outA/U4/ZN (AND2_X1)                                    0.04       5.00 r
+  outA/out_reg[62]/D (DFF_X1)                             0.01       5.01 r
+  data arrival time                                                  5.01
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[62]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -5.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[61]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U61/ZN (OAI21_X1)               0.04       4.69 f
+  multiplier/mult_17/FS_1/U53/ZN (AOI21_X1)               0.05       4.74 r
+  multiplier/mult_17/FS_1/U51/ZN (OAI21_X1)               0.04       4.78 f
+  multiplier/mult_17/FS_1/U47/Z (XOR2_X1)                 0.07       4.85 f
+  multiplier/mult_17/FS_1/SUM[59] (VM_DW01_add_0)         0.00       4.85 f
+  multiplier/mult_17/PRODUCT[61] (VM_DW02_mult_0)         0.00       4.85 f
+  multiplier/U181/ZN (AOI22_X1)                           0.04       4.89 r
+  multiplier/U180/ZN (INV_X1)                             0.02       4.91 f
+  multiplier/result[61] (VM)                              0.00       4.91 f
+  outA/in[61] (regN_N64)                                  0.00       4.91 f
+  outA/U5/ZN (AND2_X1)                                    0.03       4.94 f
+  outA/out_reg[61]/D (DFF_X1)                             0.01       4.95 f
+  data arrival time                                                  4.95
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[61]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[60]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U61/ZN (OAI21_X1)               0.04       4.69 f
+  multiplier/mult_17/FS_1/U53/ZN (AOI21_X1)               0.05       4.74 r
+  multiplier/mult_17/FS_1/U52/Z (XOR2_X1)                 0.07       4.81 r
+  multiplier/mult_17/FS_1/SUM[58] (VM_DW01_add_0)         0.00       4.81 r
+  multiplier/mult_17/PRODUCT[60] (VM_DW02_mult_0)         0.00       4.81 r
+  multiplier/U179/ZN (AOI22_X1)                           0.03       4.85 f
+  multiplier/U178/ZN (INV_X1)                             0.03       4.87 r
+  multiplier/result[60] (VM)                              0.00       4.87 r
+  outA/in[60] (regN_N64)                                  0.00       4.87 r
+  outA/U6/ZN (AND2_X1)                                    0.04       4.91 r
+  outA/out_reg[60]/D (DFF_X1)                             0.01       4.92 r
+  data arrival time                                                  4.92
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[60]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[59]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U61/ZN (OAI21_X1)               0.04       4.69 f
+  multiplier/mult_17/FS_1/U57/Z (XOR2_X1)                 0.07       4.75 f
+  multiplier/mult_17/FS_1/SUM[57] (VM_DW01_add_0)         0.00       4.75 f
+  multiplier/mult_17/PRODUCT[59] (VM_DW02_mult_0)         0.00       4.75 f
+  multiplier/U177/ZN (AOI22_X1)                           0.04       4.80 r
+  multiplier/U176/ZN (INV_X1)                             0.02       4.82 f
+  multiplier/result[59] (VM)                              0.00       4.82 f
+  outA/in[59] (regN_N64)                                  0.00       4.82 f
+  outA/U7/ZN (AND2_X1)                                    0.03       4.85 f
+  outA/out_reg[59]/D (DFF_X1)                             0.01       4.86 f
+  data arrival time                                                  4.86
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[59]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.86
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[58]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U63/ZN (AOI21_X1)               0.05       4.64 r
+  multiplier/mult_17/FS_1/U62/Z (XOR2_X1)                 0.07       4.72 r
+  multiplier/mult_17/FS_1/SUM[56] (VM_DW01_add_0)         0.00       4.72 r
+  multiplier/mult_17/PRODUCT[58] (VM_DW02_mult_0)         0.00       4.72 r
+  multiplier/U175/ZN (AOI22_X1)                           0.03       4.75 f
+  multiplier/U174/ZN (INV_X1)                             0.03       4.78 r
+  multiplier/result[58] (VM)                              0.00       4.78 r
+  outA/in[58] (regN_N64)                                  0.00       4.78 r
+  outA/U8/ZN (AND2_X1)                                    0.04       4.81 r
+  outA/out_reg[58]/D (DFF_X1)                             0.01       4.82 r
+  data arrival time                                                  4.82
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[58]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.80
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U71/ZN (OAI21_X1)               0.04       4.59 f
+  multiplier/mult_17/FS_1/U67/Z (XOR2_X1)                 0.07       4.66 f
+  multiplier/mult_17/FS_1/SUM[55] (VM_DW01_add_0)         0.00       4.66 f
+  multiplier/mult_17/PRODUCT[57] (VM_DW02_mult_0)         0.00       4.66 f
+  multiplier/U173/ZN (AOI22_X1)                           0.04       4.70 r
+  multiplier/U172/ZN (INV_X1)                             0.02       4.72 f
+  multiplier/result[57] (VM)                              0.00       4.72 f
+  outA/in[57] (regN_N64)                                  0.00       4.72 f
+  outA/U9/ZN (AND2_X1)                                    0.03       4.75 f
+  outA/out_reg[57]/D (DFF_X1)                             0.01       4.76 f
+  data arrival time                                                  4.76
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[57]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.86
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[56]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U73/ZN (AOI21_X1)               0.05       4.55 r
+  multiplier/mult_17/FS_1/U72/Z (XOR2_X1)                 0.07       4.62 r
+  multiplier/mult_17/FS_1/SUM[54] (VM_DW01_add_0)         0.00       4.62 r
+  multiplier/mult_17/PRODUCT[56] (VM_DW02_mult_0)         0.00       4.62 r
+  multiplier/U171/ZN (AOI22_X1)                           0.03       4.66 f
+  multiplier/U170/ZN (INV_X1)                             0.03       4.68 r
+  multiplier/result[56] (VM)                              0.00       4.68 r
+  outA/in[56] (regN_N64)                                  0.00       4.68 r
+  outA/U10/ZN (AND2_X1)                                   0.04       4.72 r
+  outA/out_reg[56]/D (DFF_X1)                             0.01       4.73 r
+  data arrival time                                                  4.73
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[56]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[55]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U81/ZN (OAI21_X1)               0.04       4.50 f
+  multiplier/mult_17/FS_1/U77/Z (XOR2_X1)                 0.07       4.56 f
+  multiplier/mult_17/FS_1/SUM[53] (VM_DW01_add_0)         0.00       4.56 f
+  multiplier/mult_17/PRODUCT[55] (VM_DW02_mult_0)         0.00       4.56 f
+  multiplier/U169/ZN (AOI22_X1)                           0.04       4.61 r
+  multiplier/U168/ZN (INV_X1)                             0.02       4.63 f
+  multiplier/result[55] (VM)                              0.00       4.63 f
+  outA/in[55] (regN_N64)                                  0.00       4.63 f
+  outA/U11/ZN (AND2_X1)                                   0.03       4.66 f
+  outA/out_reg[55]/D (DFF_X1)                             0.01       4.67 f
+  data arrival time                                                  4.67
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[55]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.95
+
+
+  Startpoint: regB/out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  VMSeq              5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[31]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[31]/Q (DFF_X1)                             0.08       0.08 f
+  regB/out[31] (regN_N32_1)                               0.00       0.08 f
+  multiplier/b[31] (VM)                                   0.00       0.08 f
+  multiplier/U336/ZN (INV_X1)                             0.04       0.12 r
+  multiplier/U64/Z (BUF_X1)                               0.05       0.16 r
+  multiplier/U34/ZN (INV_X1)                              0.03       0.19 f
+  multiplier/U129/ZN (AOI22_X1)                           0.05       0.24 r
+  multiplier/U128/ZN (INV_X1)                             0.02       0.27 f
+  multiplier/mult_17/B[30] (VM_DW02_mult_0)               0.00       0.27 f
+  multiplier/mult_17/U342/ZN (INV_X1)                     0.03       0.30 r
+  multiplier/mult_17/U130/Z (BUF_X1)                      0.08       0.37 r
+  multiplier/mult_17/U1031/ZN (NOR2_X1)                   0.05       0.42 f
+  multiplier/mult_17/U33/Z (XOR2_X1)                      0.07       0.48 f
+  multiplier/mult_17/S2_2_29/CO (FA_X1)                   0.08       0.57 f
+  multiplier/mult_17/S2_3_29/S (FA_X1)                    0.13       0.69 r
+  multiplier/mult_17/S2_4_28/S (FA_X1)                    0.10       0.80 f
+  multiplier/mult_17/S2_5_27/S (FA_X1)                    0.12       0.92 r
+  multiplier/mult_17/S2_6_26/S (FA_X1)                    0.10       1.02 f
+  multiplier/mult_17/S2_7_25/S (FA_X1)                    0.12       1.14 r
+  multiplier/mult_17/S2_8_24/S (FA_X1)                    0.10       1.24 f
+  multiplier/mult_17/S2_9_23/CO (FA_X1)                   0.08       1.32 f
+  multiplier/mult_17/S2_10_23/S (FA_X1)                   0.13       1.45 r
+  multiplier/mult_17/S2_11_22/S (FA_X1)                   0.10       1.56 f
+  multiplier/mult_17/S2_12_21/CO (FA_X1)                  0.08       1.64 f
+  multiplier/mult_17/S2_13_21/S (FA_X1)                   0.13       1.77 r
+  multiplier/mult_17/S2_14_20/S (FA_X1)                   0.10       1.87 f
+  multiplier/mult_17/S2_15_19/CO (FA_X1)                  0.08       1.96 f
+  multiplier/mult_17/S2_16_19/S (FA_X1)                   0.13       2.09 r
+  multiplier/mult_17/S2_17_18/S (FA_X1)                   0.10       2.19 f
+  multiplier/mult_17/S2_18_17/S (FA_X1)                   0.12       2.31 r
+  multiplier/mult_17/S2_19_16/S (FA_X1)                   0.10       2.41 f
+  multiplier/mult_17/S2_20_15/S (FA_X1)                   0.12       2.53 r
+  multiplier/mult_17/S2_21_14/S (FA_X1)                   0.10       2.63 f
+  multiplier/mult_17/S2_22_13/S (FA_X1)                   0.12       2.75 r
+  multiplier/mult_17/S2_23_12/S (FA_X1)                   0.10       2.85 f
+  multiplier/mult_17/S2_24_11/S (FA_X1)                   0.12       2.97 r
+  multiplier/mult_17/S2_25_10/S (FA_X1)                   0.10       3.07 f
+  multiplier/mult_17/S2_26_9/S (FA_X1)                    0.12       3.19 r
+  multiplier/mult_17/S2_27_8/S (FA_X1)                    0.10       3.29 f
+  multiplier/mult_17/S2_28_7/S (FA_X1)                    0.12       3.41 r
+  multiplier/mult_17/S2_29_6/S (FA_X1)                    0.10       3.51 f
+  multiplier/mult_17/S2_30_5/S (FA_X1)                    0.12       3.63 r
+  multiplier/mult_17/S4_4/S (FA_X1)                       0.11       3.74 f
+  multiplier/mult_17/U69/Z (XOR2_X1)                      0.07       3.81 f
+  multiplier/mult_17/FS_1/A[33] (VM_DW01_add_0)           0.00       3.81 f
+  multiplier/mult_17/FS_1/U199/ZN (NOR2_X1)               0.06       3.87 r
+  multiplier/mult_17/FS_1/U181/ZN (OAI21_X1)              0.04       3.91 f
+  multiplier/mult_17/FS_1/U180/ZN (AOI21_X1)              0.03       3.95 r
+  multiplier/mult_17/FS_1/U179/ZN (OAI21_X1)              0.04       3.98 f
+  multiplier/mult_17/FS_1/U108/ZN (AOI221_X1)             0.07       4.06 r
+  multiplier/mult_17/FS_1/U19/ZN (INV_X1)                 0.03       4.08 f
+  multiplier/mult_17/FS_1/U107/ZN (AOI21_X1)              0.03       4.12 r
+  multiplier/mult_17/FS_1/U106/ZN (OAI21_X1)              0.03       4.15 f
+  multiplier/mult_17/FS_1/U105/ZN (AOI21_X1)              0.04       4.18 r
+  multiplier/mult_17/FS_1/U104/ZN (OAI21_X1)              0.03       4.21 f
+  multiplier/mult_17/FS_1/U103/ZN (AOI21_X1)              0.05       4.26 r
+  multiplier/mult_17/FS_1/U101/ZN (OAI21_X1)              0.04       4.31 f
+  multiplier/mult_17/FS_1/U93/ZN (AOI21_X1)               0.05       4.36 r
+  multiplier/mult_17/FS_1/U91/ZN (OAI21_X1)               0.04       4.40 f
+  multiplier/mult_17/FS_1/U83/ZN (AOI21_X1)               0.05       4.45 r
+  multiplier/mult_17/FS_1/U82/Z (XOR2_X1)                 0.07       4.53 r
+  multiplier/mult_17/FS_1/SUM[52] (VM_DW01_add_0)         0.00       4.53 r
+  multiplier/mult_17/PRODUCT[54] (VM_DW02_mult_0)         0.00       4.53 r
+  multiplier/U167/ZN (AOI22_X1)                           0.03       4.56 f
+  multiplier/U166/ZN (INV_X1)                             0.03       4.59 r
+  multiplier/result[54] (VM)                              0.00       4.59 r
+  outA/in[54] (regN_N64)                                  0.00       4.59 r
+  outA/U12/ZN (AND2_X1)                                   0.04       4.62 r
+  outA/out_reg[54]/D (DFF_X1)                             0.01       4.63 r
+  data arrival time                                                  4.63
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.35       5.65
+  outA/out_reg[54]/CK (DFF_X1)                            0.00       5.65 r
+  library setup time                                     -0.03       5.62
+  data required time                                                 5.62
+  --------------------------------------------------------------------------
+  data required time                                                 5.62
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.99
+
+
+1

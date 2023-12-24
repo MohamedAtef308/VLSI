@@ -1,0 +1,559 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version G-2012.06-SP2 for RHEL64 -- Aug 31, 2012
+               Copyright (c) 1988-2012 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+set design VMSeq
+VMSeq
+set_app_var search_path "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM 			 /home/mohamed/Desktop/mips "
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM     /home/mohamed/Desktop/mips 
+set_app_var link_library "* NangateOpenCellLibrary_ss0p95vn40c.db"
+* NangateOpenCellLibrary_ss0p95vn40c.db
+set_app_var target_library "NangateOpenCellLibrary_ss0p95vn40c.db"
+NangateOpenCellLibrary_ss0p95vn40c.db
+sh rm -rf work
+sh mkdir -p work
+define_design_lib work -path ./work
+1
+read_file -format verilog  ../rtl/CRAdder.v
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+Loading db file '/usr/synopsys/Design_Compiler/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/Design_Compiler/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_ss0p95vn40c'
+  Loading link library 'gtech'
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder.db:CRAdder'
+Loaded 1 design.
+Current design is 'CRAdder'.
+CRAdder
+read_file -format verilog  ../rtl/CRAdder_64.v
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder_64.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder_64.v
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/CRAdder_64.db:CRAdder_64'
+Loaded 1 design.
+Current design is 'CRAdder_64'.
+CRAdder_64
+read_file -format verilog  ../rtl/FullAdder.v
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/FullAdder.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/FullAdder.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/FullAdder.db:FullAdder'
+Loaded 1 design.
+Current design is 'FullAdder'.
+FullAdder
+read_file -format verilog  ../rtl/regN.v
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/regN.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/regN.v
+
+Inferred memory devices in process
+	in routine regN line 12 in file
+		'/home/ahesham/Desktop/phase2/verilog multiplier/rtl/regN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/regN.db:regN'
+Loaded 1 design.
+Current design is 'regN'.
+regN
+read_file -format verilog  ../rtl/VM.v
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/VM.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/VM.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/VM.db:VM'
+Loaded 1 design.
+Current design is 'VM'.
+VM
+read_file -format verilog  ../rtl/VMSeq.v
+Loading verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/VMSeq.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/verilog multiplier/rtl/VMSeq.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/verilog multiplier/rtl/VMSeq.db:VMSeq'
+Loaded 1 design.
+Current design is 'VMSeq'.
+VMSeq
+analyze -library work -format verilog ../rtl/CRAdder.v
+Running PRESTO HDLC
+Compiling source file ../rtl/CRAdder.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/CRAdder_64.v
+Running PRESTO HDLC
+Compiling source file ../rtl/CRAdder_64.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/FullAdder.v
+Running PRESTO HDLC
+Compiling source file ../rtl/FullAdder.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/regN.v
+Running PRESTO HDLC
+Compiling source file ../rtl/regN.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/VM.v
+Running PRESTO HDLC
+Compiling source file ../rtl/VM.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/VMSeq.v
+Running PRESTO HDLC
+Compiling source file ../rtl/VMSeq.v
+Presto compilation completed successfully.
+1
+elaborate $design -lib work
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'VMSeq'.
+Information: Building the design 'regN' instantiated from design 'VMSeq' with
+	the parameters "32". (HDL-193)
+
+Inferred memory devices in process
+	in routine regN_N32 line 12 in file
+		'../rtl/regN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'regN' instantiated from design 'VMSeq' with
+	the parameters "64". (HDL-193)
+
+Inferred memory devices in process
+	in routine regN_N64 line 12 in file
+		'../rtl/regN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Error: Too few ports on reference to 'CRAdder_64' in 'VM'. (LINK-4)
+1
+current_design 
+Current design is 'VMSeq'.
+{VMSeq}
+check_design
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06-SP2
+Date:        Sun Jan  1 17:03:04 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                2
+    Multiply driven net with constant driver (LINT-54)              2
+
+Tristate                                                          130
+    A tristate bus has a non tri-state driver (LINT-34)           130
+--------------------------------------------------------------------------------
+
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[0]' has non three-state driver 'multiplier/I_129/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[1]' has non three-state driver 'multiplier/I_128/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[2]' has non three-state driver 'multiplier/I_127/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[3]' has non three-state driver 'multiplier/I_126/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[4]' has non three-state driver 'multiplier/I_125/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[5]' has non three-state driver 'multiplier/I_124/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[6]' has non three-state driver 'multiplier/I_123/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[7]' has non three-state driver 'multiplier/I_122/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[8]' has non three-state driver 'multiplier/I_121/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[9]' has non three-state driver 'multiplier/I_120/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[10]' has non three-state driver 'multiplier/I_119/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[11]' has non three-state driver 'multiplier/I_118/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[12]' has non three-state driver 'multiplier/I_117/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[13]' has non three-state driver 'multiplier/I_116/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[14]' has non three-state driver 'multiplier/I_115/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[15]' has non three-state driver 'multiplier/I_114/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[16]' has non three-state driver 'multiplier/I_113/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[17]' has non three-state driver 'multiplier/I_112/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[18]' has non three-state driver 'multiplier/I_111/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[19]' has non three-state driver 'multiplier/I_110/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[20]' has non three-state driver 'multiplier/I_109/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[21]' has non three-state driver 'multiplier/I_108/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[22]' has non three-state driver 'multiplier/I_107/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[23]' has non three-state driver 'multiplier/I_106/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[24]' has non three-state driver 'multiplier/I_105/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[25]' has non three-state driver 'multiplier/I_104/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[26]' has non three-state driver 'multiplier/I_103/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[27]' has non three-state driver 'multiplier/I_102/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[28]' has non three-state driver 'multiplier/I_101/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[29]' has non three-state driver 'multiplier/I_100/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[30]' has non three-state driver 'multiplier/I_99/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[31]' has non three-state driver 'multiplier/I_98/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[32]' has non three-state driver 'multiplier/I_97/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[33]' has non three-state driver 'multiplier/I_96/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[34]' has non three-state driver 'multiplier/I_95/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[35]' has non three-state driver 'multiplier/I_94/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[36]' has non three-state driver 'multiplier/I_93/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[37]' has non three-state driver 'multiplier/I_92/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[38]' has non three-state driver 'multiplier/I_91/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[39]' has non three-state driver 'multiplier/I_90/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[40]' has non three-state driver 'multiplier/I_89/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[41]' has non three-state driver 'multiplier/I_88/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[42]' has non three-state driver 'multiplier/I_87/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[43]' has non three-state driver 'multiplier/I_86/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[44]' has non three-state driver 'multiplier/I_85/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[45]' has non three-state driver 'multiplier/I_84/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[46]' has non three-state driver 'multiplier/I_83/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[47]' has non three-state driver 'multiplier/I_82/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[48]' has non three-state driver 'multiplier/I_81/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[49]' has non three-state driver 'multiplier/I_80/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[50]' has non three-state driver 'multiplier/I_79/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[51]' has non three-state driver 'multiplier/I_78/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[52]' has non three-state driver 'multiplier/I_77/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[53]' has non three-state driver 'multiplier/I_76/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[54]' has non three-state driver 'multiplier/I_75/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[55]' has non three-state driver 'multiplier/I_74/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[56]' has non three-state driver 'multiplier/I_73/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[57]' has non three-state driver 'multiplier/I_72/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[58]' has non three-state driver 'multiplier/I_71/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[59]' has non three-state driver 'multiplier/I_70/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[60]' has non three-state driver 'multiplier/I_69/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[61]' has non three-state driver 'multiplier/I_68/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[62]' has non three-state driver 'multiplier/I_67/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_6_net_[63]' has non three-state driver 'multiplier/I_66/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[0]' has non three-state driver 'multiplier/I_63/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[1]' has non three-state driver 'multiplier/I_62/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[2]' has non three-state driver 'multiplier/I_61/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[3]' has non three-state driver 'multiplier/I_60/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[4]' has non three-state driver 'multiplier/I_59/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[5]' has non three-state driver 'multiplier/I_58/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[6]' has non three-state driver 'multiplier/I_57/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[7]' has non three-state driver 'multiplier/I_56/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[8]' has non three-state driver 'multiplier/I_55/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[9]' has non three-state driver 'multiplier/I_54/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[10]' has non three-state driver 'multiplier/I_53/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[11]' has non three-state driver 'multiplier/I_52/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[12]' has non three-state driver 'multiplier/I_51/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[13]' has non three-state driver 'multiplier/I_50/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[14]' has non three-state driver 'multiplier/I_49/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[15]' has non three-state driver 'multiplier/I_48/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[16]' has non three-state driver 'multiplier/I_47/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[17]' has non three-state driver 'multiplier/I_46/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[18]' has non three-state driver 'multiplier/I_45/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[19]' has non three-state driver 'multiplier/I_44/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[20]' has non three-state driver 'multiplier/I_43/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[21]' has non three-state driver 'multiplier/I_42/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[22]' has non three-state driver 'multiplier/I_41/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[23]' has non three-state driver 'multiplier/I_40/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[24]' has non three-state driver 'multiplier/I_39/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[25]' has non three-state driver 'multiplier/I_38/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[26]' has non three-state driver 'multiplier/I_37/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[27]' has non three-state driver 'multiplier/I_36/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[28]' has non three-state driver 'multiplier/I_35/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[29]' has non three-state driver 'multiplier/I_34/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[30]' has non three-state driver 'multiplier/I_33/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_3_net_[31]' has non three-state driver 'multiplier/I_32/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[0]' has non three-state driver 'multiplier/I_31/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[1]' has non three-state driver 'multiplier/I_30/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[2]' has non three-state driver 'multiplier/I_29/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[3]' has non three-state driver 'multiplier/I_28/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[4]' has non three-state driver 'multiplier/I_27/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[5]' has non three-state driver 'multiplier/I_26/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[6]' has non three-state driver 'multiplier/I_25/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[7]' has non three-state driver 'multiplier/I_24/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[8]' has non three-state driver 'multiplier/I_23/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[9]' has non three-state driver 'multiplier/I_22/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[10]' has non three-state driver 'multiplier/I_21/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[11]' has non three-state driver 'multiplier/I_20/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[12]' has non three-state driver 'multiplier/I_19/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[13]' has non three-state driver 'multiplier/I_18/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[14]' has non three-state driver 'multiplier/I_17/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[15]' has non three-state driver 'multiplier/I_16/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[16]' has non three-state driver 'multiplier/I_15/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[17]' has non three-state driver 'multiplier/I_14/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[18]' has non three-state driver 'multiplier/I_13/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[19]' has non three-state driver 'multiplier/I_12/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[20]' has non three-state driver 'multiplier/I_11/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[21]' has non three-state driver 'multiplier/I_10/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[22]' has non three-state driver 'multiplier/I_9/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[23]' has non three-state driver 'multiplier/I_8/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[24]' has non three-state driver 'multiplier/I_7/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[25]' has non three-state driver 'multiplier/I_6/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[26]' has non three-state driver 'multiplier/I_5/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[27]' has non three-state driver 'multiplier/I_4/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[28]' has non three-state driver 'multiplier/I_3/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[29]' has non three-state driver 'multiplier/I_2/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[30]' has non three-state driver 'multiplier/I_1/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/_0_net_[31]' has non three-state driver 'multiplier/I_0/Z'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/*Logic0*' has non three-state driver 'multiplier/U2/**logic_0**'. (LINT-34)
+Warning: In design 'VMSeq', three-state bus 'multiplier/*Logic1*' has non three-state driver 'multiplier/U1/**logic_1**'. (LINT-34)
+Warning: In design 'VMSeq', multiply-driven net 'multiplier/*Logic0*' is driven by constant 0. (LINT-54)
+Warning: In design 'VMSeq', multiply-driven net 'multiplier/*Logic1*' is driven by constant 1. (LINT-54)
+1
+source ./cons/cons.tcl
+1
+link
+
+  Linking design 'VMSeq'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (9 designs)               /home/ahesham/Desktop/phase2/verilog multiplier/syn/VMSeq.db, etc
+  NangateOpenCellLibrary_ss0p95vn40c (library)
+                              /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db
+
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder_64' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder_64' in 'VM'. (LINK-5)
+0
+compile -map_effort medium
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder_64' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder_64' in 'VM'. (LINK-5)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 132 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'regN_N64'
+  Processing 'VM'
+Warning: design 'VM' has 131 out of 146 cells marked size-only which may limit optimization. (OPT-301)
+  Processing 'regN_N32_0'
+  Processing 'VMSeq'
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder' in 'VM'. (LINK-5)
+Error: Too few ports on reference to 'CRAdder_64' in 'VM'. (LINK-4)
+Warning: Unable to resolve reference 'CRAdder_64' in 'VM'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'VM_DW02_mult_0'
+  Processing 'VM_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:05    7010.7      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6511.4      0.00       0.0       0.0                          
+    0:00:06    6443.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    6443.3      0.00       0.0       0.0                          
+    0:00:06    6443.3      0.00       0.0       0.0                          
+    0:00:06    6443.3      0.00       0.0       0.0                          
+    0:00:07    6425.0      0.00       0.0       0.0                          
+    0:00:07    6415.1      0.00       0.0       0.0                          
+    0:00:07    6413.5      0.00       0.0       0.0                          
+    0:00:07    6411.9      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+    0:00:07    6410.3      0.00       0.0       0.0                          
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_area > ./report/synth_area.rpt
+report_cell > ./report/synth_cells.rpt
+report_qor  > ./report/synth_qor.rpt
+report_resources > ./report/synth_resources.rpt
+report_timing -max_paths 10 > ./report/synth_timing.rpt
+report_power > ./report/total_power.rpt
+write_sdc  output/${design}.sdc 
+1
+define_name_rules  no_case -case_insensitive
+1
+change_names -rule no_case -hierarchy
+Warning: In the design VM_DW01_add_0, net 'A[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[0]' is connecting multiple ports. (UCN-1)
+1
+change_names -rule verilog -hierarchy
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design VM_DW01_add_0, net 'A[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design VM_DW01_add_0, net 'A[0]' is connecting multiple ports. (UCN-1)
+1
+set verilogout_no_tri	 true
+true
+set verilogout_equation  false
+false
+write -hierarchy -format verilog -output output/${design}.v 
+Writing verilog file '/home/ahesham/Desktop/phase2/verilog multiplier/syn/output/VMSeq.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write -f ddc -hierarchy -output output/${design}.ddc   
+Writing ddc file 'output/VMSeq.ddc'.
+1
+exit
+
+Memory usage for main task 174 Mbytes.
+Memory usage for this session 174 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+
+Thank you...

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : VMSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 17:03:12 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              68.00
+  Critical Path Length:          5.04
+  Critical Path Slack:           0.58
+  Critical Path Clk Period:      6.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          6
+  Hierarchical Port Count:        707
+  Leaf Cell Count:               3275
+  Buf/Inv Cell Count:             642
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3147
+  Sequential Cell Count:          128
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     5831.518015
+  Noncombinational Area:   578.815979
+  Buf/Inv Area:            410.171996
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              6410.333994
+  Design Area:            6410.333994
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4403
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.189.128
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.11
+  Logic Optimization:                  1.20
+  Mapping Optimization:                1.98
+  -----------------------------------------
+  Overall Compile Time:                6.14
+  Overall Compile Wall Clock Time:     7.31
+
+1

@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Dec 21 18:31:21 2023
+Analysis & Synthesis Status : Successful - Sun Dec 24 15:41:33 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : TreeMultiplier
-Top-level Entity Name : TM
+Top-level Entity Name : TMSeq
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 128
+Total registers : 128
+Total pins : 130
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
