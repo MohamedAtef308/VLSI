@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : cell
+Design : BoothSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 17:20:56 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+multiplier                Booth                           17491.361844
+                                                                    h
+outA                      regN_N64                        364.419990
+                                                                    h, n, p
+regA                      regN_N32_0                      181.677995
+                                                                    h, n, p
+regB                      regN_N32_1                      181.677995
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 4 cells                                             18219.137824
+1

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : BoothSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 17:20:56 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:             260.00
+  Critical Path Length:         12.62
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.08
+  Total Hold Violation:         -3.99
+  No. of Hold Violations:       64.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       2148
+  Hierarchical Port Count:      22150
+  Leaf Cell Count:              16869
+  Buf/Inv Cell Count:            6321
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     16741
+  Sequential Cell Count:          128
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    17640.321845
+  Noncombinational Area:   578.815979
+  Buf/Inv Area:           3816.834000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             18219.137824
+  Design Area:           18219.137824
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         17000
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.189.128
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.10
+  Logic Optimization:                 37.53
+  Mapping Optimization:              604.06
+  -----------------------------------------
+  Overall Compile Time:              646.57
+  Overall Compile Wall Clock Time:   649.83
+
+1

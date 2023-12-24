@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : BoothSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 17:20:55 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                          130
+Number of nets:                           258
+Number of cells:                            4
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:       17640.321845
+Buf/Inv area:             3816.834000
+Noncombinational area:     578.815979
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          18219.137824
+Total area:                 undefined
+1
