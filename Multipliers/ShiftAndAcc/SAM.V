@@ -3,21 +3,34 @@ module SAM (
     input [31:0] b,
     output wire [63:0] result
 );
-    reg [63:0] temp;
-    reg [31:0] tempA,tempB;
-    reg tempsign ;
+    wire [63:0] temp [32:0];
+    wire [63:0] addTemp [31:0];
+    wire [63:0] negvTemp,ExtendedA;
+    wire [31:0] tempA,tempB,negvA,negvB; 
+
+    wire tempsign ;
     
-    integer i;
-    always @(*) begin
-        tempsign =  a[31] ^ b[31];
-        tempA = a[31]?  ~a +1'b1:a;
-        tempB = b[31]? ~b +1'b1:b;
-        temp = 64'b0;
-        for (i = 0; i < 31; i = i + 1) begin
-            if (tempB[i]) begin
-                temp = temp + (tempA[30:0] << i);
+    CRAdder CRAddA(~a, 0, 1'b1, negvA);
+    CRAdder CRAddB(~b, 0, 1'b1, negvB);
+    assign tempA = a[31]? negvA:a;
+    assign tempB = b[31]? negvB:b;
+    assign ExtendedA = {{32'b0}, tempA};    
+    assign tempsign =  a[31] ^ b[31];
+    assign temp[0] = 64'b0;
+        genvar j;
+        generate
+            for (j = 0; j < 32; j = j + 1) begin : ADD_LOOP
+                    CRAdder_64 CRAddResult(
+                        .a(ExtendedA << j),
+                        .b(temp[j]),
+                        .cin(1'b0),
+                        .sum(addTemp[j])
+                        
+                    );
+                    assign temp[j+1] = tempB[j] ?addTemp[j]:temp[j];
+                
             end
-        end
-    end
-    assign result = tempsign?~temp +1'b1:temp;
+        endgenerate
+    CRAdder_64 CRAddResult(~temp[32], 64'b0, 1'b1, negvTemp);
+    assign result = tempsign?negvTemp:temp[32];
 endmodule
