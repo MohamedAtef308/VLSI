@@ -1,4 +1,4 @@
-module VMSeq_TB;
+module VM_tb;
 
     reg [31:0] a;
     reg [31:0] b;
