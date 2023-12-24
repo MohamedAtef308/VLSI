@@ -116,7 +116,7 @@ module TM (
   wire [63:0] adderResult_level10;
   wire [63:0] carry_level10;
   BWAdder adder_7(adderResult_level9, shiftedA[63], carry_level9, adderResult_level10, carry_level10);
-
-  assign result = adderResult_level10 + carry_level10;
+  wire cout, overflow;
+  CRAdder_64 CRAdd(adderResult_level10, carry_level10, 1'b0, result, cout, overflow);
 
 endmodule
