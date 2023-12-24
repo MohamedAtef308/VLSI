@@ -1,18 +1,21 @@
-module VM_tb;
+module VMSeq_TB;
 
     reg [31:0] a;
     reg [31:0] b;
     wire [63:0] result;
 
-    // Instantiate the CSA module
-    VM uut (
-        .a(a),
-        .b(b),
-        .result(result)
-    );
 
     // Clock generation
     reg clk = 0;
+    wire reset = 0;
+    VMSeq uut (
+        .A(a),
+        .B(b),
+        .clk(clk),
+        .reset(reset),
+        .result(result)
+    );
+
     always #5 clk = ~clk;
     integer faildTestCases = 0;
     integer passedTestCases = 0;
@@ -167,6 +170,7 @@ module VM_tb;
         $display("Number of passed test cases:%h", passedTestCases);
         $display("Number of failed test cases:%h", faildTestCases);
         // Finish simulation
+        #20
         $stop;
     end
 
