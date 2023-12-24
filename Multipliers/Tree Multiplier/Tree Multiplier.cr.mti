@@ -1,15 +1,15 @@
-{C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v}
+{C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/BWAdder.v} {1 {vlog -work work -stats=none {C:\Users\sofa5\Desktop\VLSI\Multipliers\Tree Multiplier\BWAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BWAdder
+
+Top level modules:
+	BWAdder
+
+} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module TM
 
 Top level modules:
 	TM
-
-} {} {}} {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v} {1 {vlog -work work -stats=none {C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module TM_tb
-
-Top level modules:
-	TM_tb
 
 } {} {}}

@@ -1,0 +1,69 @@
+# Compile of BWAdder.v was successful.
+# Compile of BWAdder.v was successful.
+# Load canceled
+vsim -gui work.TM
+# vsim -gui work.TM 
+# Start time: 23:18:54 on Dec 22,2023
+# Loading work.TM
+# Loading work.BWAdder
+add wave -position insertpoint  \
+sim:/TM/a \
+sim:/TM/b \
+sim:/TM/result
+force -freeze sim:/TM/a 32'd10 0
+force -freeze sim:/TM/b 32'd11 0
+run
+quit -sim
+# End time: 23:19:55 on Dec 22,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 3
+vsim -gui work.TM_tb
+# vsim -gui work.TM_tb 
+# Start time: 23:20:12 on Dec 22,2023
+# Loading work.TM_tb
+# Loading work.TM
+# Loading work.BWAdder
+# Break key hit
+quit -sim
+# End time: 23:20:37 on Dec 22,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 1
+# Compile of TM_tb.v was successful.
+# Load canceled
+# Compile of TM_tb.v was successful.
+vsim -gui work.TM_tb
+# vsim -gui work.TM_tb 
+# Start time: 23:21:09 on Dec 22,2023
+# Loading work.TM_tb
+# Loading work.TM
+# Loading work.BWAdder
+add wave -position insertpoint  \
+sim:/TM_tb/a \
+sim:/TM_tb/b \
+sim:/TM_tb/result \
+sim:/TM_tb/clk \
+sim:/TM_tb/faildTestCases \
+sim:/TM_tb/passedTestCases
+run -all
+# Test Case#1 passed
+# =====================
+# Test Case#2 passed
+# =====================
+# Test Case#3 passed
+# =====================
+# Test Case#4 passed
+# =====================
+# Test Case#5 passed
+# =====================
+# Test Case#6 passed
+# =====================
+# Test Case#7 passed
+# =====================
+# Test Case#8 passed
+# =====================
+# Number of passed test cases:00000008
+# Number of failed test cases:00000000
+# ** Note: $stop    : C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v(170)
+#    Time: 80 ps  Iteration: 0  Instance: /TM_tb
+# Break in Module TM_tb at C:/Users/sofa5/Desktop/VLSI/Multipliers/Tree Multiplier/TM_tb.v line 170
+quit -sim
+# End time: 23:22:51 on Dec 22,2023, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 3
