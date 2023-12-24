@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : cell
+Design : TMSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 16:31:56 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+multiplier                TM                              21561.693810
+                                                                    h
+outA                      regN_N64                        391.818002
+                                                                    h, n, p
+regA                      regN_N32_0                      194.978000
+                                                                    h, n, p
+regB                      regN_N32_1                      196.042000
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 4 cells                                             22344.531812
+1
