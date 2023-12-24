@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : FPMSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 19:40:14 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              59.00
+  Critical Path Length:          4.60
+  Critical Path Slack:           0.02
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.18
+  Total Hold Violation:         -0.94
+  No. of Hold Violations:       21.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          7
+  Hierarchical Port Count:        557
+  Leaf Cell Count:               1612
+  Buf/Inv Cell Count:             113
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1516
+  Sequential Cell Count:           96
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     3115.658010
+  Noncombinational Area:   434.111984
+  Buf/Inv Area:             70.490000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              3549.769994
+  Design Area:            3549.769994
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2207
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.189.128
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    3.40
+  Logic Optimization:                  1.26
+  Mapping Optimization:                1.10
+  -----------------------------------------
+  Overall Compile Time:                6.33
+  Overall Compile Wall Clock Time:     7.42
+
+1

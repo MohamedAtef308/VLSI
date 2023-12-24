@@ -1,0 +1,297 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version G-2012.06-SP2 for RHEL64 -- Aug 31, 2012
+               Copyright (c) 1988-2012 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+set design FPMSeq
+FPMSeq
+set_app_var search_path "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM 			 /home/mohamed/Desktop/mips "
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM     /home/mohamed/Desktop/mips 
+set_app_var link_library "* NangateOpenCellLibrary_ss0p95vn40c.db"
+* NangateOpenCellLibrary_ss0p95vn40c.db
+set_app_var target_library "NangateOpenCellLibrary_ss0p95vn40c.db"
+NangateOpenCellLibrary_ss0p95vn40c.db
+sh rm -rf work
+sh mkdir -p work
+define_design_lib work -path ./work
+1
+read_file -format verilog  ../rtl/regN.v
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+Loading db file '/usr/synopsys/Design_Compiler/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/Design_Compiler/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_ss0p95vn40c'
+  Loading link library 'gtech'
+Loading verilog file '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/regN.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/floating point multiplier/rtl/regN.v
+
+Inferred memory devices in process
+	in routine regN line 12 in file
+		'/home/ahesham/Desktop/phase2/floating point multiplier/rtl/regN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/regN.db:regN'
+Loaded 1 design.
+Current design is 'regN'.
+regN
+read_file -format verilog  ../rtl/FPM.v
+Loading verilog file '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPM.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPM.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPM.db:FPM'
+Loaded 1 design.
+Current design is 'FPM'.
+FPM
+read_file -format verilog  ../rtl/FPMSeq.v
+Loading verilog file '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPMSeq.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPMSeq.v
+Presto compilation completed successfully.
+Current design is now '/home/ahesham/Desktop/phase2/floating point multiplier/rtl/FPMSeq.db:FPMSeq'
+Loaded 1 design.
+Current design is 'FPMSeq'.
+FPMSeq
+analyze -library work -format verilog ../rtl/regN.v
+Running PRESTO HDLC
+Compiling source file ../rtl/regN.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/FPM.v
+Running PRESTO HDLC
+Compiling source file ../rtl/FPM.v
+Presto compilation completed successfully.
+1
+analyze -library work -format verilog ../rtl/FPMSeq.v
+Running PRESTO HDLC
+Compiling source file ../rtl/FPMSeq.v
+Presto compilation completed successfully.
+1
+elaborate $design -lib work
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FPMSeq'.
+Information: Building the design 'regN' instantiated from design 'FPMSeq' with
+	the parameters "32". (HDL-193)
+
+Inferred memory devices in process
+	in routine regN_N32 line 12 in file
+		'../rtl/regN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       out_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+current_design 
+Current design is 'FPMSeq'.
+{FPMSeq}
+check_design
+ 
+****************************************
+check_design summary:
+Version:     G-2012.06-SP2
+Date:        Sun Jan  1 19:40:07 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPM', cell 'B_2' does not drive any nets. (LINT-1)
+1
+source ./cons/cons.tcl
+1
+link
+
+  Linking design 'FPMSeq'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (5 designs)               /home/ahesham/Desktop/phase2/floating point multiplier/syn/FPMSeq.db, etc
+  NangateOpenCellLibrary_ss0p95vn40c (library)
+                              /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db
+
+1
+compile -map_effort medium
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | G-2012.06-DWBB_201206.2 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'regN_N32_0'
+  Processing 'FPM'
+  Processing 'FPMSeq'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Building model 'DW01_add_width8' (rpl)
+  Processing 'DW01_add_width8'
+  Building model 'DW01_add_width8' (cla)
+  Processing 'DW01_add_width8'
+  Building model 'DW01_sub_width8' (rpl)
+  Processing 'DW01_sub_width8'
+  Building model 'DW01_sub_width8' (cla)
+  Processing 'DW01_sub_width8'
+  Allocating blocks in 'DW02_mult_A_width24_B_width24'
+  Building model 'DW01_add_width46' (cla)
+  Processing 'DW01_add_width46'
+  Building model 'DW02_mult_A_width24_B_width24' (csa)
+  Processing 'DW02_mult_A_width24_B_width24'
+  Processing 'FPM_DW01_add_0'
+  Processing 'FPM_DW01_add_1'
+  Processing 'FPM_DW01_sub_0'
+  Processing 'FPM_DW02_mult_0'
+  Processing 'FPM_DW01_add_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:05    3818.2      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3631.7      0.00       0.0       0.0                          
+    0:00:06    3580.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    3580.6      0.00       0.0       0.0                          
+    0:00:06    3580.6      0.00       0.0       0.0                          
+    0:00:06    3580.6      0.00       0.0       0.0                          
+    0:00:06    3560.4      0.00       0.0       0.0                          
+    0:00:06    3552.7      0.00       0.0       0.0                          
+    0:00:06    3550.8      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3550.3      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+    0:00:06    3549.8      0.00       0.0       0.0                          
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_area > ./report/synth_area.rpt
+report_cell > ./report/synth_cells.rpt
+report_qor  > ./report/synth_qor.rpt
+report_resources > ./report/synth_resources.rpt
+report_timing -max_paths 10 > ./report/synth_timing.rpt
+report_power > ./report/total_power.rpt
+write_sdc  output/${design}.sdc 
+1
+define_name_rules  no_case -case_insensitive
+1
+change_names -rule no_case -hierarchy
+Warning: In the design FPM_DW01_add_2, net 'A[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design FPM_DW01_add_2, net 'A[21]' is connecting multiple ports. (UCN-1)
+1
+change_names -rule verilog -hierarchy
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design FPM_DW01_add_2, net 'A[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design FPM_DW01_add_2, net 'A[21]' is connecting multiple ports. (UCN-1)
+1
+set verilogout_no_tri	 true
+true
+set verilogout_equation  false
+false
+write -hierarchy -format verilog -output output/${design}.v 
+Writing verilog file '/home/ahesham/Desktop/phase2/floating point multiplier/syn/output/FPMSeq.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write -f ddc -hierarchy -output output/${design}.ddc   
+Writing ddc file 'output/FPMSeq.ddc'.
+1
+exit
+
+Memory usage for main task 174 Mbytes.
+Memory usage for this session 174 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+
+Thank you...

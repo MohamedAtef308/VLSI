@@ -1,4 +1,4 @@
-create_clock -name clk -period 9 -waveform {0 4.5} [get_ports clk]
+create_clock -name clk -period 5 -waveform {0 2.5} [get_ports clk]
 set_input_delay -max 1 -clock [get_clocks clk] [remove_from_collection [all_inputs] [get_ports clk]]
 set_output_delay -max 1 -clock [get_clocks clk] [all_outputs]
 set_clock_uncertainty 0.35 [get_clocks]

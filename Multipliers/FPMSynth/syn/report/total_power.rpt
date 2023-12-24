@@ -6,9 +6,9 @@ Warning: Design has unannotated sequential cell outputs. (PWR-415)
 ****************************************
 Report : power
         -analysis_effort low
-Design : VMSeq
+Design : FPMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 19:37:24 2017
+Date   : Sun Jan  1 19:40:15 2017
 ****************************************
 
 
@@ -22,7 +22,7 @@ Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-VMSeq                  5K_hvratio_1_1    NangateOpenCellLibrary_ss0p95vn40c
+FPMSeq                 5K_hvratio_1_1    NangateOpenCellLibrary_ss0p95vn40c
 
 
 Global Operating Voltage = 0.95 
@@ -34,12 +34,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 193.3970 uW   (60%)
-  Net Switching Power  = 128.4512 uW   (40%)
+  Cell Internal Power  = 183.4924 uW   (65%)
+  Net Switching Power  =  97.1708 uW   (35%)
                          ---------
-Total Dynamic Power    = 321.8482 uW  (100%)
+Total Dynamic Power    = 280.6633 uW  (100%)
 
-Cell Leakage Power     =  29.2000 uW
+Cell Leakage Power     =  14.2558 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -49,9 +49,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          62.0036            1.1577        2.1361e+03           65.2975  (  18.60%)
+register          80.0046            4.0188        1.6024e+03           85.6259  (  29.03%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    131.3935          127.2934        2.7064e+04          285.7507  (  81.40%)
+combinational    103.4879           93.1520        1.2653e+04          209.2934  (  70.97%)
 --------------------------------------------------------------------------------------------------
-Total            193.3972 uW       128.4511 uW     2.9200e+04 nW       351.0482 uW
+Total            183.4925 uW        97.1708 uW     1.4256e+04 nW       294.9192 uW
 1

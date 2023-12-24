@@ -1,0 +1,1003 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : FPMSeq
+Version: G-2012.06-SP2
+Date   : Sun Jan  1 19:40:14 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/CO (FA_X1)
+                                                          0.08       4.15 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_3/CO (FA_X1)
+                                                          0.08       4.24 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_4/CO (FA_X1)
+                                                          0.08       4.32 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_5/CO (FA_X1)
+                                                          0.08       4.40 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_6/CO (FA_X1)
+                                                          0.08       4.48 f
+  multiplier/U64/ZN (XNOR2_X1)                            0.04       4.52 r
+  multiplier/U84/ZN (AND2_X1)                             0.04       4.56 r
+  multiplier/result[30] (FPM)                             0.00       4.56 r
+  outA/in[30] (regN_N32_1)                                0.00       4.56 r
+  outA/U3/ZN (AND2_X1)                                    0.04       4.59 r
+  outA/out_reg[30]/D (DFF_X1)                             0.01       4.60 r
+  data arrival time                                                  4.60
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[30]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/CO (FA_X1)
+                                                          0.08       4.15 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_3/CO (FA_X1)
+                                                          0.08       4.24 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_4/CO (FA_X1)
+                                                          0.08       4.32 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_5/CO (FA_X1)
+                                                          0.08       4.40 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_6/S (FA_X1)
+                                                          0.11       4.51 r
+  multiplier/U55/ZN (AND2_X1)                             0.04       4.54 r
+  multiplier/result[29] (FPM)                             0.00       4.54 r
+  outA/in[29] (regN_N32_1)                                0.00       4.54 r
+  outA/U4/ZN (AND2_X1)                                    0.04       4.58 r
+  outA/out_reg[29]/D (DFF_X1)                             0.01       4.59 r
+  data arrival time                                                  4.59
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[29]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/CO (FA_X1)
+                                                          0.08       4.15 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_3/CO (FA_X1)
+                                                          0.08       4.24 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_4/CO (FA_X1)
+                                                          0.08       4.32 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_5/S (FA_X1)
+                                                          0.11       4.43 r
+  multiplier/U54/ZN (AND2_X1)                             0.04       4.46 r
+  multiplier/result[28] (FPM)                             0.00       4.46 r
+  outA/in[28] (regN_N32_1)                                0.00       4.46 r
+  outA/U5/ZN (AND2_X1)                                    0.04       4.50 r
+  outA/out_reg[28]/D (DFF_X1)                             0.01       4.51 r
+  data arrival time                                                  4.51
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[28]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/CO (FA_X1)
+                                                          0.08       4.15 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_3/CO (FA_X1)
+                                                          0.08       4.24 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_4/S (FA_X1)
+                                                          0.11       4.35 r
+  multiplier/U58/ZN (AND2_X1)                             0.04       4.38 r
+  multiplier/result[27] (FPM)                             0.00       4.38 r
+  outA/in[27] (regN_N32_1)                                0.00       4.38 r
+  outA/U6/ZN (AND2_X1)                                    0.04       4.42 r
+  outA/out_reg[27]/D (DFF_X1)                             0.01       4.43 r
+  data arrival time                                                  4.43
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[27]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/CO (FA_X1)
+                                                          0.08       4.15 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_3/S (FA_X1)
+                                                          0.11       4.27 r
+  multiplier/U57/ZN (AND2_X1)                             0.04       4.30 r
+  multiplier/result[26] (FPM)                             0.00       4.30 r
+  outA/in[26] (regN_N32_1)                                0.00       4.30 r
+  outA/U7/ZN (AND2_X1)                                    0.04       4.34 r
+  outA/out_reg[26]/D (DFF_X1)                             0.01       4.35 r
+  data arrival time                                                  4.35
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[26]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/CO (FA_X1)
+                                                          0.11       4.07 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_2/S (FA_X1)
+                                                          0.11       4.19 r
+  multiplier/U56/ZN (AND2_X1)                             0.04       4.22 r
+  multiplier/result[25] (FPM)                             0.00       4.22 r
+  outA/in[25] (regN_N32_1)                                0.00       4.22 r
+  outA/U8/ZN (AND2_X1)                                    0.04       4.26 r
+  outA/out_reg[25]/D (DFF_X1)                             0.01       4.27 r
+  data arrival time                                                  4.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[25]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/add_0_root_sub_1_root_add_30_2/U1_1/S (FA_X1)
+                                                          0.14       4.10 r
+  multiplier/U49/ZN (AND2_X1)                             0.04       4.14 r
+  multiplier/result[24] (FPM)                             0.00       4.14 r
+  outA/in[24] (regN_N32_1)                                0.00       4.14 r
+  outA/U9/ZN (AND2_X1)                                    0.04       4.18 r
+  outA/out_reg[24]/D (DFF_X1)                             0.01       4.18 r
+  data arrival time                                                  4.18
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[24]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/U87/ZN (OR2_X1)                              0.10       4.06 f
+  multiplier/U8/ZN (OAI22_X1)                             0.06       4.12 r
+  multiplier/result[11] (FPM)                             0.00       4.12 r
+  outA/in[11] (regN_N32_1)                                0.00       4.12 r
+  outA/U15/ZN (AND2_X1)                                   0.04       4.16 r
+  outA/out_reg[11]/D (DFF_X1)                             0.01       4.17 r
+  data arrival time                                                  4.17
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[11]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/U87/ZN (OR2_X1)                              0.10       4.06 f
+  multiplier/U9/ZN (OAI22_X1)                             0.06       4.12 r
+  multiplier/result[13] (FPM)                             0.00       4.12 r
+  outA/in[13] (regN_N32_1)                                0.00       4.12 r
+  outA/U16/ZN (AND2_X1)                                   0.04       4.16 r
+  outA/out_reg[13]/D (DFF_X1)                             0.01       4.17 r
+  data arrival time                                                  4.17
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[13]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: regB/out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outA/out_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPMSeq             5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regB/out_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  regB/out_reg[22]/Q (DFF_X1)                             0.09       0.09 f
+  regB/out[22] (regN_N32_2)                               0.00       0.09 f
+  multiplier/b[22] (FPM)                                  0.00       0.09 f
+  multiplier/mult_28/B[22] (FPM_DW02_mult_0)              0.00       0.09 f
+  multiplier/mult_28/U132/ZN (INV_X1)                     0.12       0.21 r
+  multiplier/mult_28/U410/ZN (NOR2_X1)                    0.06       0.27 f
+  multiplier/mult_28/U45/ZN (AND2_X1)                     0.05       0.32 f
+  multiplier/mult_28/S3_2_22/S (FA_X1)                    0.13       0.44 r
+  multiplier/mult_28/S2_3_21/S (FA_X1)                    0.10       0.55 f
+  multiplier/mult_28/S2_4_20/S (FA_X1)                    0.12       0.66 r
+  multiplier/mult_28/S2_5_19/S (FA_X1)                    0.10       0.77 f
+  multiplier/mult_28/S2_6_18/S (FA_X1)                    0.12       0.89 r
+  multiplier/mult_28/S2_7_17/S (FA_X1)                    0.10       0.99 f
+  multiplier/mult_28/S2_8_16/S (FA_X1)                    0.12       1.11 r
+  multiplier/mult_28/S2_9_15/S (FA_X1)                    0.10       1.21 f
+  multiplier/mult_28/S2_10_14/S (FA_X1)                   0.12       1.33 r
+  multiplier/mult_28/S2_11_13/S (FA_X1)                   0.10       1.43 f
+  multiplier/mult_28/S2_12_12/S (FA_X1)                   0.12       1.55 r
+  multiplier/mult_28/S2_13_11/S (FA_X1)                   0.10       1.65 f
+  multiplier/mult_28/S2_14_10/S (FA_X1)                   0.12       1.77 r
+  multiplier/mult_28/S2_15_9/S (FA_X1)                    0.10       1.87 f
+  multiplier/mult_28/S2_16_8/S (FA_X1)                    0.12       1.99 r
+  multiplier/mult_28/S2_17_7/S (FA_X1)                    0.10       2.09 f
+  multiplier/mult_28/S2_18_6/S (FA_X1)                    0.12       2.21 r
+  multiplier/mult_28/S2_19_5/S (FA_X1)                    0.10       2.31 f
+  multiplier/mult_28/S2_20_4/S (FA_X1)                    0.12       2.43 r
+  multiplier/mult_28/S2_21_3/S (FA_X1)                    0.10       2.53 f
+  multiplier/mult_28/S2_22_2/CO (FA_X1)                   0.08       2.62 f
+  multiplier/mult_28/S4_2/S (FA_X1)                       0.13       2.75 r
+  multiplier/mult_28/U72/Z (XOR2_X1)                      0.06       2.81 r
+  multiplier/mult_28/FS_1/A[23] (FPM_DW01_add_2)          0.00       2.81 r
+  multiplier/mult_28/FS_1/U24/ZN (AND2_X1)                0.05       2.87 r
+  multiplier/mult_28/FS_1/U126/ZN (AOI21_X1)              0.04       2.91 f
+  multiplier/mult_28/FS_1/U124/ZN (OAI21_X1)              0.06       2.96 r
+  multiplier/mult_28/FS_1/U116/ZN (AOI21_X1)              0.04       3.00 f
+  multiplier/mult_28/FS_1/U114/ZN (OAI21_X1)              0.05       3.05 r
+  multiplier/mult_28/FS_1/U106/ZN (AOI21_X1)              0.04       3.09 f
+  multiplier/mult_28/FS_1/U104/ZN (OAI21_X1)              0.05       3.14 r
+  multiplier/mult_28/FS_1/U96/ZN (AOI21_X1)               0.04       3.18 f
+  multiplier/mult_28/FS_1/U94/ZN (OAI21_X1)               0.05       3.24 r
+  multiplier/mult_28/FS_1/U86/ZN (AOI21_X1)               0.04       3.28 f
+  multiplier/mult_28/FS_1/U84/ZN (OAI21_X1)               0.05       3.33 r
+  multiplier/mult_28/FS_1/U76/ZN (AOI21_X1)               0.04       3.37 f
+  multiplier/mult_28/FS_1/U74/ZN (OAI21_X1)               0.05       3.42 r
+  multiplier/mult_28/FS_1/U66/ZN (AOI21_X1)               0.04       3.46 f
+  multiplier/mult_28/FS_1/U64/ZN (OAI21_X1)               0.05       3.52 r
+  multiplier/mult_28/FS_1/U56/ZN (AOI21_X1)               0.04       3.56 f
+  multiplier/mult_28/FS_1/U54/ZN (OAI21_X1)               0.05       3.61 r
+  multiplier/mult_28/FS_1/U46/ZN (AOI21_X1)               0.04       3.65 f
+  multiplier/mult_28/FS_1/U44/ZN (OAI21_X1)               0.05       3.70 r
+  multiplier/mult_28/FS_1/U36/ZN (AOI21_X1)               0.04       3.74 f
+  multiplier/mult_28/FS_1/U34/ZN (OAI21_X1)               0.05       3.79 r
+  multiplier/mult_28/FS_1/U29/ZN (AOI21_X1)               0.04       3.83 f
+  multiplier/mult_28/FS_1/U27/Z (XOR2_X1)                 0.07       3.90 f
+  multiplier/mult_28/FS_1/SUM[45] (FPM_DW01_add_2)        0.00       3.90 f
+  multiplier/mult_28/PRODUCT[47] (FPM_DW02_mult_0)        0.00       3.90 f
+  multiplier/U80/Z (CLKBUF_X1)                            0.06       3.96 f
+  multiplier/U87/ZN (OR2_X1)                              0.10       4.06 f
+  multiplier/U10/ZN (OAI22_X1)                            0.06       4.12 r
+  multiplier/result[15] (FPM)                             0.00       4.12 r
+  outA/in[15] (regN_N32_1)                                0.00       4.12 r
+  outA/U17/ZN (AND2_X1)                                   0.04       4.16 r
+  outA/out_reg[15]/D (DFF_X1)                             0.01       4.17 r
+  data arrival time                                                  4.17
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.35       4.65
+  outA/out_reg[15]/CK (DFF_X1)                            0.00       4.65 r
+  library setup time                                     -0.03       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+1

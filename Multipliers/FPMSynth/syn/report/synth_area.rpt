@@ -1,9 +1,9 @@
  
 ****************************************
 Report : area
-Design : VMSeq
+Design : FPMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 19:37:23 2017
+Date   : Sun Jan  1 19:40:14 2017
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -11,8 +11,8 @@ Library(s) Used:
 
     NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
 
-Number of ports:                          130
-Number of nets:                           258
+Number of ports:                           98
+Number of nets:                           194
 Number of cells:                            4
 Number of combinational cells:              0
 Number of sequential cells:                 0
@@ -20,11 +20,11 @@ Number of macros:                           0
 Number of buf/inv:                          0
 Number of references:                       4
 
-Combinational area:       6445.712003
-Buf/Inv area:              366.547997
-Noncombinational area:     578.815979
+Combinational area:       3115.658010
+Buf/Inv area:               70.490000
+Noncombinational area:     434.111984
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:          7024.527982
+Total cell area:          3549.769994
 Total area:                 undefined
 1

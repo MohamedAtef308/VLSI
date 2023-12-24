@@ -1,9 +1,9 @@
  
 ****************************************
 Report : cell
-Design : VMSeq
+Design : FPMSeq
 Version: G-2012.06-SP2
-Date   : Sun Jan  1 19:37:23 2017
+Date   : Sun Jan  1 19:40:14 2017
 ****************************************
 
 Attributes:
@@ -16,14 +16,14 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-multiplier                VM                              6296.752002
+multiplier                FPM                             3004.736009
                                                                     h
-outA                      regN_N64                        364.419990
+outA                      regN_N32_1                      181.677995
                                                                     h, n, p
 regA                      regN_N32_0                      181.677995
                                                                     h, n, p
-regB                      regN_N32_1                      181.677995
+regB                      regN_N32_2                      181.677995
                                                                     h, n, p
 --------------------------------------------------------------------------------
-Total 4 cells                                             7024.527982
+Total 4 cells                                             3549.769994
 1
